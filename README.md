@@ -97,10 +97,10 @@ Vertically, the INDY ARM is divided into 3 architecture domains that span the 4 
 
 The main or primary view is the All-in viewpoint.  In addition, based on the needs of various discussion forums (e.g. did-spec, did-resoltuon, Hyperledger Indy Rocketchat channels, etc.), a number of additional "alternative" or focused viewpoints have been created.
 
-- All-in Viewpoint (first time readers should focus here)
-- DID Data Model and DID Document Data Model Viewpoint
-- DID Resolution Viewpoint
-- Agent and Wallet Viewpint
+1. All-in Viewpoint (first time readers should focus here)
+2. DID Data Model and DID Document Data Model Viewpoint
+3. DID Resolution Viewpoint
+4. Agent and Wallet Viewpint
 
 ### All-in Viewpoint
 
@@ -230,7 +230,7 @@ TODO
 The Agent and Wallet viewpoint is an example of an alternative (focused) viewpoint that depicts the architectural elements that comprise an Indy Agent and an Indy Wallet.
 
 ![Agent and Wallet Viewpoint](images/HBB-Indy-Sovrin&#32;ARM&#32;v0.21-Edge-Agent-Wallet.png)
-Figure 3. Agent and Wallet Viewpoint
+Figure 4. Agent and Wallet Viewpoint
 
 #### Narration
 
