@@ -49,30 +49,32 @@ NOTE: Some of the elements depicted in the INDY ARM have been influenced by the 
 - ArchiMate Modeling Specification: The Open Group ArchiMate 3.0 Specification
 - Archi Modeling Tool: Archi, the open source ArchiMate modeling platform
 
-## Recent Feedback and Changes
+## INDY ARM
 
-Ledger Agent Node changed to Ledger Node (@danielhardman)
-Ledger Nodes: A2A Protocol corrected to Ledger-to-Ledger Protocol (@danielhardman)
-Relationships added to depict A2A Protocol messaging between Edge Agents and Cloud Agents (@danielhardman)
-(“Identity” Layer) appended to Business Layer – Architecture (@mwherman2000)
-(“Edge” Layer) appended to Application Layer – Architecture (@mwherman2000)
-(“Cloud” and “Ledger” Layers) appended to Technology Layer – Architecture (@mwherman)
-Owner changed to Controller in (P2) (per CCG discussion Jan. 15 2019)
-Principle P7 added. See #4.
-Non-Fungible Entities added to Principles. (P8) and (P9) added. (P1) updated.
-Element (3) is now shown as copies of the same (3a) and (3b).
-“inanimate thing” changed to Non-Fungible Entity (10).
-Principle P4 reworded. DID Entity (14) redefined.
-Indy Ledger Local Node State changed to Indy Ledger Local Node State (Replica) (36) and (38).
-Indy Ledger (Journal) changed to Indy Ledger Local State (17).
-Indy Transactions changed to Indy Transactions (Journal) (17).
-Removed DID Resolver Full Node (@peacemaker).
-Four perspectives added to the both of the ARM.
-Indy Ledger Local Node State (Replica) was changed to Local Ledger State (Replica).
-Partitioned the DID Data Model (old 12) perspective into DID Document Data Model (44) and DID Data Model (new 12) perspectives.
-Added elements (44) to (50) to support change 19.
+### Recent Feedback and Changes
 
-## Architecture Perspectives 
+1. Ledger Agent Node changed to Ledger Node (@danielhardman)
+2. Ledger Nodes: A2A Protocol corrected to Ledger-to-Ledger Protocol (@danielhardman)
+3. Relationships added to depict A2A Protocol messaging between Edge Agents and Cloud Agents (@danielhardman)
+4. (“Identity” Layer) appended to Business Layer – Architecture (@mwherman2000)
+5. (“Edge” Layer) appended to Application Layer – Architecture (@mwherman2000)
+6. (“Cloud” and “Ledger” Layers) appended to Technology Layer – Architecture (@mwherman)
+7. Owner changed to Controller in (P2) (per CCG discussion Jan. 15 2019)
+8. Principle P7 added. See #4.
+9. Non-Fungible Entities added to Principles. (P8) and (P9) added. (P1) updated.
+10. Element (3) is now shown as copies of the same (3a) and (3b).
+11. “inanimate thing” changed to Non-Fungible Entity (10).
+12. Principle P4 reworded. DID Entity (14) redefined.
+13. Indy Ledger Local Node State changed to Indy Ledger Local Node State (Replica) (36) and (38).
+14. Indy Ledger (Journal) changed to Indy Ledger Local State (17).
+15. Indy Transactions changed to Indy Transactions (Journal) (17).
+16. Removed DID Resolver Full Node (@peacemaker).
+17. Four perspectives added to the both of the ARM.
+18. Indy Ledger Local Node State (Replica) was changed to Local Ledger State (Replica).
+19. Partitioned the DID Data Model (old 12) perspective into DID Document Data Model (44) and DID Data Model (new 12) perspectives.
+20. Added elements (44) to (50) to support change 19.
+
+### Architecture Perspectives
 
 Horizontally, the INDY ARM is partitioned into 4 perspectives:
 
@@ -83,7 +85,7 @@ Horizontally, the INDY ARM is partitioned into 4 perspectives:
 - [Verified Credentials (VC) Data Model (Future)]
 - Principles (E)
 
-## Architecture Domains
+### Architecture Domains
 
 Vertically, the INDY ARM is divided into 3 architecture domains that span the 4 perspectives:
 
@@ -91,11 +93,104 @@ Vertically, the INDY ARM is divided into 3 architecture domains that span the 4 
 - Applications Layer (23), (44), and (12)
 - Technology Layer (30), (49), and (15)
 
-Viewpoints
+### Viewpoints
 
 The INDY ARM is illustrated in the following “all in” viewpoint. The INDY ARM is an actual queryable model – it is not a drawing (e.g. a Visio or PowerPoint diagram).
 
 The Narration section that follows the graphic includes a description of each of the numbered bullets.
 
 Click on the graphic to enlarge it in a separate browser tab.  Suggestion: Drag the new browser tab onto a second monitor if you have one.
+
+![INDY ARM: All-in Viewpoint](images/HBB-Indy-Sovrin&#32;ARM&#32;v0.21.png)
+Figure 1. Hyperledger Indy/Sovrin Comprehensive Architecture Reference Model (INDY ARM): All-in Viewpoint
+
+### Narration
+
+1. **Business Layer (“Edge” Layer) of the INDY ARM.** “The Business Layer depicts business services offered to customers, which are realized in the organization by business processes performed by business actors.” [ARCHIMATE]
+    - The following Actor Roles are depicted in this version of the ARM: Issuer, Holder (x 2), Inspector, and Verifier. These roles are not formally defined in the draft DID specification; for the time being, they have been borrowed from the documentation related to the Verified Credentials project.
+2. An Issuer issues a self-sovereign identity (SSI) for a Something; e.g. a Birth Certificate or a Purchase Order (3). In this example, the SSI is for a Thing (10); in particular, a completed and approved Purchase Order (3) (or Birth Certificate). The Purchase Order is issued to a Holder. Both the Issuer and the Holder work for a fictitious company called Acme Corporation.
+3. SSI for a Something (e.g. Birth Certificate, Purchase Order) issued by the Issuer @ Acme (2).
+4. The Holder @ Acme accepts the SSI for the Thing (a Purchase Order) from the Issuer (2). In turn, the Holder @ Acme presents the SSI for the Purchase Order to a Holder at Baker Limited. The Holder @ Baker receives the SSI for the Purchase Order from the Holder @ Acme (4).
+5.  An Inspector @ Baker may request that the Holder @ Baker present the SSI for the Purchase Order to him/her/it. The Inspector @ Baker receives the SSI from the Holder @ Baker.
+6. The Inspector @ Baker (or any Holder) can ask for the SSI for the Purchase Order to be verified by a Verifier.
+7. There is a set of Business Services (e.g, Issue, Store, Request, Verify, Register, etc.) that support the above processes.  These Business Services are supported by services exposed by the Applications Architecture Layer (23).
+8. **Business Layer – DID Data Model** captures the key business-level model elements such as Actor (9), Things (10), and (Business) Processes (37).
+9. An Actor is “a business entity that is capable of performing behavior.” [ARCHIMATE]
+    - Examples of Actors include Persons, Organizations, and Software Agents.
+    - An Actor can have a Controller (P7). A Controller of an Actor is an Actor (P7).
+10. A Thing is Non-Fungible Entity (NFE) (P9).
+    - Examples of Things include Pets (with embedded ID chips), Cars, Houses, Business Documents, Products, Assemblies, and Parts.
+    - The software component of a Software Agent is a Thing. If you’re talking about Software Agent as a business entity capable of performing behavior, then the Software Agent, in this context, is an Actor.
+    - A slice of a particular kind of Toast is not a Thing because it is fungible (P8) and (P9). A slice of Toast can be a Thing in the future when each slice of bread has its own bar code or serial number. A photo of a slice of Toast is a Thing because it is non-fungible (most photographs are non-fungible; hence, are Things).
+    - A living cell (skin cell, blood cell, etc.) is not considered to be an Actor (or a Thing). It is not a business entity nor a Non-Fungible Entity (P9) (within a single body of DNA) ..at least, not for the foreseeable future.
+    - A Thing has a Controller (P2). A Controller of a Thing is an Actor (P2).
+11. (Business) Processes. Actors (Persons, Organizations, and Software Agents) participate in Processes. A Process acts on/accesses Things (e.g. a Pet (with an embedded ID chip), Car, House, Business Document, Product, Assembly, Part) to perform work.
+12. **Application Layer – DID Document Data Model** captures the key application-level model elements related to DID Documents such as id (DID) (13) and DID Entity (14).
+13. id (DID) exists as an attribute of a DID Entity (14) (and by implication, as an attribute of DID Document (16), the JSON-LD serialization of the corresponding DID Entity (14)).
+    - The id (DID) attribute is given the nickname “DID” (aka Decentralized Identifier) for convenience; but more importantly, to clarify what a DID specifically refers to (as well as to clarify what the term DID specifically does not refer to). “DID” should only be used to refer to the id (DID) attribute of a DID Entity (or DID Document).
+    - id (DID) are used to index, find, and retrieve DID Documents from the Technology Layer (30).
+14. A DID Entity is a data structure comprised of a collection of key-value pairs with keys such as: id (DID), service (endpoints), authentication, publicKey, @context, etc. (P4)
+    - DID Entities have a set of attributes that includes the following:
+    - id (DID)
+    - service (endpoints)
+    - authentication
+    - publicKey
+    - @context
+    - etc.
+15. **Technology Layer – DID Document Data Model** captures the key technology-level model elements such as a DID Document (16).
+16. A DID Document is a JSON-LD serialization of a DID Entity (14).
+    - A DID Document has a set of attributes that includes the following:
+    - id (DID) (13)
+    - service (endpoints)
+    - authentication
+    - publicKey
+    - @context
+    - etc.
+    - The id (DID) attribute (13) is the unique identifier or key for the DID Document.
+    - The id (DID) attribute is given the nickname “DID” (aka Decentralized Identifier) for convenience; but more importantly, to clarify what a DID specifically refers to (as well as to clarify what the term DID specifically does not refer to). “DID” should only be used to refer to the id (DID) attribute of a DID Entity (14) (or DID Document).
+    - id (DID) are used to index, find, and retrieve DID Documents from the Technology Layer (30). id (DID) exists as an attribute of a DID Entity (14) (and by implication, as an attribute of DID Document, the JSON-LD serialization of the corresponding DID Entity).
+17. When DID Documents (16), in turn, are serialized to the Local Ledger State (36) and (38) by the Indy Ledger Nodes (35) and (37), they are stored as a series of Indy Ledger Transactions. Edge Agents and Cloud Agents call an Indy Ledger Node to persist a DID Document to the Indy Ledger. DID Documents, specifically, are written to the Indy Ledger by the Indy Ledger Nodes using:
+    - Indy NYM transactions (50), and
+    - Indy ATTRIB transactions.
+18. **Technology Layer – Projects and Distributions** highlights the Hyperledger (and potentially other) open source projects that design, build, and supply software components to both the Applications and Technology Layers.
+19. The Hyperledger Indy-SDK Project distribution includes two key software components used to implement an Indy Wallet (25) and (32):
+    - libIndy (lower-level)
+    - libVCX (higher-level)
+20. The Hyperledger Indy-Agent Project distribution is used to implement the Indy Agent functionality in the:
+    - Edge Agent App (24)
+    - Edge Agent Web App (28)
+    - Edge Agent Lightweight App (29)
+    - Cloud Agent Node (31)
+    - Ledger Node (35), and
+    - Credential Registry Agent Mode (39)
+21. The Hyperledger URSA Project distribution is a utility that provides implementations of the cryptographic functionality required across all of the Hyperledger projects.
+22. The Hyperledger Indy-Node Project distribution is used to implement the Indy Node functionality in the Ledger Node (35) and (37).
+23. **Applications Layer (“Edge” Layer) of the INDY ARM.** “The Application Layer depicts application services that support the business, and the applications that realize them.” [ARCHIMATE]
+24. The Edge Agent App 1 is an end-user application for interacting with the self-sovereign identities an Actor owns: personal, organizational, as a Controller of Thing, or as a Guardian of another Actor (9) and (10). This is typically a mobile or a desktop app.
+25. The Edge Wallet is a mobile or desktop application component that supports the Edge Agent App’s requirements (24) for managing actual self-sovereign identities it owns.
+26. Edge Agent App 2 is an example of another Edge Agent App in the ecosystem. Communication between Edge Agent Apps takes place using the Indy Agent-to-Agent Protocol (A2A Protocol) (27).
+27. The Indy Agent-to-Agent Protocol (A2A Protocol) is the protocol used for communication between Edge Agent Apps (24) and (26) and Cloud Agent Nodes (31) and (33).
+28. The Edge Agent Web App is an Edge Agent implemented as a server-hosted web application.
+29. The Edge Agent Lightweight App (EAPA) is a mobile or desktop application that doesn’t use a local Edge Wallet. Instead, the EAPA relies on the services of a Cloud Agent (31) and Cloud Wallet (32).
+30. **Technology Layer (“Cloud” Layer) of the INDY ARM.** “The Technology Layer depicts technology services such as processing, storage, and communication services needed to run the applications, and the computer and communication hardware and system software that realize those services.” [ARCHIMATE]
+31. The Could Agent App 1 is a cloud or server-based application for interacting with the self-sovereign identities an Actor owns: personal, organizational, as a Controller of Thing, or as a Guardian of another Actor (9) and (10). The Cloud Agent App is an alternative to using an Edge Agent App (24) and Edge Agent Wallet (25).
+32. The Cloud Wallet is a cloud or server-based technology component that supports the Cloud Agent App’s requirements (31) for managing actual self-sovereign identities it owns.
+33. Cloud Agent App 2 is an example of another Cloud Agent App in the ecosystem. Communication between Cloud Agent Apps takes place using the Indy Agent-to-Agent Protocol (A2A Protocol) (34).
+34. The Indy Agent-to-Agent Protocol (A2A Protocol) is the protocol used for communication between Edge Agent Apps (24) and (26) and Cloud Agent Nodes (31) and (33).
+35. Ledge Agent Nodes support the requirements of Edge Agent (24) and Cloud Agent (31) applications for persisting, managing, and interacting with DID Documents (16) persisted to the Indy Ledger (36) and (17).
+36. Local Ledger State (Replica) is the distributed ledger technology that supports the persistence, management of DID Documents (16) persisted to the ledger as Indy NYM and ATTRIB transactions (17).
+37. Ledge Agent Node 2 is an example of another Ledge Agent Node in the ecosystem. Communication between Ledge Agent Nodes takes place using the Indy Ledger-to-Ledger Protocol (38).
+38. Local Ledger State (Replica) is the distributed ledger technology that supports the persistence, management of DID Documents (16) persisted to the ledger as Indy NYM and ATTRIB transactions (17).
+39. The Indy Ledger-to-Ledger Protocol is the protocol used for communication between Ledger Nodes (35) and (37).
+40. Credential Registry Agent Node is a repository for persisting, managing, and interacting with Verified Credentials. It’s implementation is based on technologies similar to those used to implement Cloud Edge Agents.
+41. DID Resolver Lightweight Node is a component that is used by Edge Agent (24) and Cloud Agent (31) applications to resolve a id (DID) (13) into a specific DID Document (16) (assuming the DID Document has been persisted to the Indy Ledger (36) and (17)). The DID Resolver Lightweight Node relies on a Ledger Node (35) and (37) to gain access to the Indy Transactions (17) on the Indy Ledger (36). The DID Document is returned as an attribute of a DID Resolver Response (43) a the DID Resolver Node.
+42. The DID Resolver Response is returned by the DID Resolver Lightweight Node (40) in response to a request to resolve a particular id (DID). The DID Resolver Response contains a didDocument attribute that, in turn, contains the corresponding DID Document (16) (assuming the DID Document exists on the Indy Ledger (36), (42) and (17)).
+43.  The DIF Universal-Resolver Project distribution is used to implement the DID Resolver Lightweight Node (41) functionality.
+44. **Application Layer – DID Data Model** captures the key application-level model elements related to DIDs such as SEND_NYM Message (45).
+45. A SEND_NYM message is used to create a Verifiable DID on the Ledger (17)
+46. The identifier attribute in the SEND_NYM message is associated (assigned the value) of the DID of the steward/trustee.
+47. The dest subattribute in the SEND_NYM message is associated (assigned the value) of the DID of the subject.
+48. The verkey subattribute in the SEND_NYM message is associated (assigned the value) of the verkey of the subject.
+49. **Technology Layer – DID Document Data Model** captures the key technology-level model elements such as the DID Ledger State (17) and Indy NYM Transaction (50).
+50. Indy NYM Transaction
 
