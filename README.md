@@ -98,7 +98,7 @@ Vertically, the INDY ARM is divided into 3 architecture domains that span the 4 
 The main or primary view is the All-in viewpoint.  In addition, based on the needs of various discussion forums (e.g. did-spec, did-resoltuon, Hyperledger Indy Rocketchat channels, etc.), a number of additional "alternative" or focused viewpoints have been created.
 
 1. [All-in Viewpoint](./README.md#all-in-viewpoint) (first time readers should focus here)
-2. [DID Data Model and DID Document Data Model Viewpoint](#did-data-model-and-did-document-data-model-viewpoint)
+2. [DID Data Model and DID Document Data Model Viewpoint](./README.md#did-data-model-and-did-document-data-model-viewpoint)
 3. [DID Resolution Viewpoint](./README.md#did-resolution-viewpoint)
 4. [Agent and Wallet Viewpiont](./README.md#agent-and-wallet-viewpoint)
 
