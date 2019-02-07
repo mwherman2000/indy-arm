@@ -97,12 +97,12 @@ Vertically, the INDY ARM is divided into 3 architecture domains that span the 4 
 
 The main or primary view is the All-in viewpoint.  In addition, based on the needs of various discussion forums (e.g. did-spec, did-resoltuon, Hyperledger Indy Rocketchat channels, etc.), a number of additional "alternative" or focused viewpoints have been created.
 
-1. All-in Viewpoint (first time readers should focus here)
-2. DID Data Model and DID Document Data Model Viewpoint
-3. DID Resolution Viewpoint
-4. Agent and Wallet Viewpint
+1. [All-in Viewpoint](#all-in-viewpoint) (first time readers should focus here)
+2. [DID Data Model and DID Document Data Model Viewpoint](#did-data-model-and-did-document-data-model-viewpoint)
+3. [DID Resolution Viewpoint](#did-resolution-viewpoint)
+4. [Agent and Wallet Viewpiont](#agent-and-wallet-viewpoint)
 
-### All-in Viewpoint
+### 1. All-in Viewpoint
 
 The INDY ARM is illustrated in the following “All-in” viewpoint. The INDY ARM is an actual queryable model – it is not a drawing (e.g. a Visio or PowerPoint diagram).
 
@@ -203,33 +203,33 @@ Figure 1. Hyperledger Indy/Sovrin Comprehensive Architecture Reference Model (IN
 49. **Technology Layer – DID Document Data Model** captures the key technology-level model elements such as the DID Ledger State (17) and Indy NYM Transaction (50).
 50. Indy NYM Transaction
 
-### DID Data Model and DID Document Data Model Viewpoint
+### 2. DID Data Model and DID Document Data Model Viewpoint
 
 The DID Data Model and DID Document Data Model viewpoint is an example of alternative viewpoint that illustrates how _cookie cutter_ subviews of the All-in viewpoint can be created from the same underlying INDY ARM moodel.
 
-![DID Data Model and DID Document Data Model](images/HBB-Indy-Sovrin&#32;ARM&#32;v0.21-Data&#32;Models.png)
+![INDY ARM: DID Data Model and DID Document Data Model](images/HBB-Indy-Sovrin&#32;ARM&#32;v0.21-Data&#32;Models.png)
 Figure 2. DID Data Model and DID Document Data Model Viewpoint
 
 #### Nararation
 
 TODO
 
-### DID Resolution Viewpoint
+### 3. DID Resolution Viewpoint
 
 The DID Resolution viewpoint is an example of yet another alternative viewpoint that illustrates how _cookie cutter_ subviews of the All-in viewpoint can be created from the same underlying INDY ARM moodel.
 
-![DID Resolution Viewpoint](images/HBB-Indy-Sovrin&#32;ARM&#32;v0.21-DID&#32;Resolution.png)
+![INDY ARM: DID Resolution Viewpoint](images/HBB-Indy-Sovrin&#32;ARM&#32;v0.21-DID&#32;Resolution.png)
 Figure 3. DID Resolution Viewpoint
 
 #### Narration
 
 TODO
 
-### Agent and Wallet Viewpoint
+### 4. Agent and Wallet Viewpoint
 
 The Agent and Wallet viewpoint is an example of an alternative (focused) viewpoint that depicts the architectural elements that comprise an Indy Agent and an Indy Wallet.
 
-![Agent and Wallet Viewpoint](images/HBB-Indy-Sovrin&#32;ARM&#32;v0.21-Edge-Agent-Wallet.png)
+![INDY ARM: Agent and Wallet Viewpoint](images/HBB-Indy-Sovrin&#32;ARM&#32;v0.21-Edge-Agent-Wallet.png)
 Figure 4. Agent and Wallet Viewpoint
 
 #### Narration
