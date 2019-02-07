@@ -1,9 +1,9 @@
 # indy-arm - Hyperledger Indy/Sovrin Comprehensive Architecture Reference Model (INDY ARM)
 _Draft document for discussion purposes_
 
-Michael Herman (Toronto/Calgary/Seattle)
-Hyperonomy Business Blockchain Project / Parallelspace Corporation
-January 2019
+- Michael Herman (Toronto/Calgary/Seattle)
+- Hyperonomy Business Blockchain Project / Parallelspace Corporation
+- January 2019
 
 Update cycle: As required – sometimes several times in a single day.
 
@@ -40,14 +40,14 @@ NOTE: Some of the elements depicted in the INDY ARM have been influenced by the 
 
 ## Companion Articles
 
-- What is a DID?
-- INDY ARM In Practice: End-to-end Path from id (DID) to a Real-Life Something
-- Vision: Trusted Digital Web
+- [What is a DID?](https://hyperonomy.com/2019/01/24/what-is-a-did/)
+- [INDY ARM In Practice: End-to-end Path from id (DID) to a Real-Life Something](https://hyperonomy.com/2019/01/04/the-path-from-a-id-did-to-a-real-life-something/)
+- [Vision: Trusted Digital Web](https://hyperonomy.com/2018/12/31/the-trusted-digital-web/)
 
 ## Tooling
 
-- ArchiMate Modeling Specification: The Open Group ArchiMate 3.0 Specification
-- Archi Modeling Tool: Archi, the open source ArchiMate modeling platform
+- [ArchiMate Modeling Specification: The Open Group ArchiMate 3.0 Specification](http://pubs.opengroup.org/architecture/archimate3-doc/)
+- [Archi Modeling Tool: Archi, the open source ArchiMate modeling platform](https://www.archimatetool.com/)
 
 ## INDY ARM
 
@@ -93,9 +93,9 @@ Vertically, the INDY ARM is divided into 3 architecture domains that span the 4 
 - Applications Layer (23), (44), and (12)
 - Technology Layer (30), (49), and (15)
 
-### Viewpoints
+### All-in Viewpoint
 
-The INDY ARM is illustrated in the following “all in” viewpoint. The INDY ARM is an actual queryable model – it is not a drawing (e.g. a Visio or PowerPoint diagram).
+The INDY ARM is illustrated in the following “All-in” viewpoint. The INDY ARM is an actual queryable model – it is not a drawing (e.g. a Visio or PowerPoint diagram).
 
 The Narration section that follows the graphic includes a description of each of the numbered bullets.
 
@@ -104,7 +104,7 @@ Click on the graphic to enlarge it in a separate browser tab.  Suggestion: Drag 
 ![INDY ARM: All-in Viewpoint](images/HBB-Indy-Sovrin&#32;ARM&#32;v0.21.png)
 Figure 1. Hyperledger Indy/Sovrin Comprehensive Architecture Reference Model (INDY ARM): All-in Viewpoint
 
-### Narration
+#### Narration
 
 1. **Business Layer (“Edge” Layer) of the INDY ARM.** “The Business Layer depicts business services offered to customers, which are realized in the organization by business processes performed by business actors.” [ARCHIMATE]
     - The following Actor Roles are depicted in this version of the ARM: Issuer, Holder (x 2), Inspector, and Verifier. These roles are not formally defined in the draft DID specification; for the time being, they have been borrowed from the documentation related to the Verified Credentials project.
@@ -194,3 +194,22 @@ Figure 1. Hyperledger Indy/Sovrin Comprehensive Architecture Reference Model (IN
 49. **Technology Layer – DID Document Data Model** captures the key technology-level model elements such as the DID Ledger State (17) and Indy NYM Transaction (50).
 50. Indy NYM Transaction
 
+### DID Data Model and DID Document Data Model Viewpoint
+
+The DID Data Model and DID Document Data Model viewpoint is an example of alternative viewpoint that illustrates how _cookie cutter_ subviews of the All-in viewpoint can be created from the same underlying INDY ARM moodel.
+
+![DID Data Model and DID Document Data Model](images/HBB-Indy-Sovrin&#32;ARM&#32;v0.21-Data&#32;Models.png)
+
+#### Nararation
+
+TODO
+
+### DID Resolution Viewpoint
+
+The DID Resolution viewpoint is an example of yet another alternative viewpoint that illustrates how _cookie cutter_ subviews of the All-in viewpoint can be created from the same underlying INDY ARM moodel.
+
+![DID Resolution Viewpoint](images/HBB-Indy-Sovrin&#32;ARM&#32;v0.21-DID&#32;Resolution.png)
+
+#### Narration
+
+TODO
