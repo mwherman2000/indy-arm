@@ -7,13 +7,13 @@ _Draft document for discussion purposes_
 
 Update cycle: As required – sometimes several times in a single day.
 
-# Overview
+## Overview
 
 The purpose of the Hyperledger Indy/Sovrin (Indy) Comprehensive Architecture Reference Model (INDY ARM) is to provide a complete, reliable, precise, visual reference for the concepts presented in the draft Decentralized Identifiers (DIDs) specification (link).
 
 The primary audience for this article are: software people (software architects and developers), enterprise architects, and anyone new to the Hyperledger Indy project or the field of self-sovereign identity (SSI) looking to find a fast on-ramp.
 
-# Goals 
+## Goals 
 
 The goals of the INDY ARM are:
 
@@ -199,6 +199,7 @@ Figure 1. Hyperledger Indy/Sovrin Comprehensive Architecture Reference Model (IN
 The DID Data Model and DID Document Data Model viewpoint is an example of alternative viewpoint that illustrates how _cookie cutter_ subviews of the All-in viewpoint can be created from the same underlying INDY ARM moodel.
 
 ![DID Data Model and DID Document Data Model](images/HBB-Indy-Sovrin&#32;ARM&#32;v0.21-Data&#32;Models.png)
+Figure 2. DID Data Model and DID Document Data Model Viewpoint
 
 #### Nararation
 
@@ -209,6 +210,22 @@ TODO
 The DID Resolution viewpoint is an example of yet another alternative viewpoint that illustrates how _cookie cutter_ subviews of the All-in viewpoint can be created from the same underlying INDY ARM moodel.
 
 ![DID Resolution Viewpoint](images/HBB-Indy-Sovrin&#32;ARM&#32;v0.21-DID&#32;Resolution.png)
+Figure 3. DID Resolution Viewpoint
+
+#### Narration
+
+TODO
+
+## Appendix A - DID 6-Layer Model
+
+TODO
+
+### Steps, Documentation, and Precidens Viewpoint
+
+TODO
+
+![DID 6-Layer Model](images/DID-6-Layer-Steps-Docs-Predicents.png)
+Figure 4. DID 6-Layer Model
 
 #### Narration
 
