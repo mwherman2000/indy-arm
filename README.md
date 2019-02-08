@@ -249,7 +249,7 @@ Figure 5. DID Entity (DID Subject) Viewpoint
 
 The DID Subjects viewpoint is an example of an alternative (focused) viewpoint that depicts the architectural elements that rrealize a DID Entity (DID SUbject).
 
-![ DID Subjects Viewpoint](images/HBB-Indy-Sovrin&#32;ARM&#32;v0.21-DID&#32;Subjects.png)
+![ DID Subjects Viewpoint](images/HBB-Indy-Sovrin&#32;ARM&#32;v0.21-DID&#32;Subjects-Principles.png)
 Figure 6. DID Subjects Viewpoint
 
 
