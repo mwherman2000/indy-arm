@@ -101,7 +101,8 @@ The main or primary view is the All-in viewpoint.  In addition, based on the nee
 2. [DID Data Model and DID Document Data Model Viewpoint](./README.md#2-did-data-model-and-did-document-data-model-viewpoint)
 3. [DID Resolution Viewpoint](./README.md#3-did-resolution-viewpoint)
 4. [Agent and Wallet Viewpiont](./README.md#4-agent-and-wallet-viewpoint)
-5. [DID Entity (DID Subject) Viewpoint](./README.md#5-did-entity-did-subject-viewpoint)
+5. [DID Entity Viewpoint](./README.md#5-did-entity-viewpoint)
+6. [DID Subjects Viewpoint](./README.md#6-did-subjects-viewpoint)
 
 ### 1. All-in Viewpoint
 
@@ -237,12 +238,20 @@ Figure 4. Agent and Wallet Viewpoint
 
 See the cooresponding numbered elements in the [Narration](https://github.com/mwherman2000/indy-arm/blob/master/README.md#narration) section for the All-in viewpoint.
 
-### 5. DID Entity (DID Subject) Viewpoint
+### 5. DID Entity Viewpoint
 
-The DID Entity (DID Subject) is an example of an alternative (focused) viewpoint that depicts the architectural elements that rrealize a DID Entity (DID SUbject).
+The DID Entity vuewpoint is an example of an alternative (focused) viewpoint that depicts the architectural elements that rrealize a DID Entity (DID SUbject).
 
 ![DID Entity (DID Subject) Viewpoint](images/HBB-Indy-Sovrin&#32;ARM&#32;v0.21-DID&#32;Entity.png)
 Figure 5. DID Entity (DID Subject) Viewpoint
+
+### 6. DID Subjects Viewpoint
+
+The DID Subjects viewpoint is an example of an alternative (focused) viewpoint that depicts the architectural elements that rrealize a DID Entity (DID SUbject).
+
+![ DID Subjects Viewpoint](images/HBB-Indy-Sovrin&#32;ARM&#32;v0.21-DID&#32;Subjects.png)
+Figure 6. DID Subjects Viewpoint
+
 
 #### Narration
 
