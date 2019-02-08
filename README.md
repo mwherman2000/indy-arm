@@ -212,7 +212,7 @@ Figure 2. DID Data Model and DID Document Data Model Viewpoint
 
 #### Nararation
 
-TODO
+See the cooresponding numbered elements in the [Narration](https://github.com/mwherman2000/indy-arm/blob/master/README.md#narration) section for the All-in viewpoint.
 
 ### 3. DID Resolution Viewpoint
 
@@ -223,7 +223,7 @@ Figure 3. DID Resolution Viewpoint
 
 #### Narration
 
-TODO
+See the cooresponding numbered elements in the [Narration](https://github.com/mwherman2000/indy-arm/blob/master/README.md#narration) section for the All-in viewpoint.
 
 ### 4. Agent and Wallet Viewpoint
 
@@ -234,7 +234,7 @@ Figure 4. Agent and Wallet Viewpoint
 
 #### Narration
 
-TODO
+See the cooresponding numbered elements in the [Narration](https://github.com/mwherman2000/indy-arm/blob/master/README.md#narration) section for the All-in viewpoint.
 
 ## Appendix A - DID 6-Layer Model
 
