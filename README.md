@@ -292,11 +292,11 @@ TODO
 
 ## Appendix B - Indy Agent Architecture Reference Model (INDY-AGENT-ARM)
 
-TODO
+To understand the INDY-AGENT-ARM more fully, read the [INDY HIPE](https://github.com/hyperledger/indy-hipe/pulls) entitled [0002: Agents](https://github.com/hyperledger/indy-hipe/blob/31df09b3949021d790ebc364d7da1b9347821d87/text/0002-agents/README.md).
 
 ### Location and Capabiliies Viewpoint
 
-TODO
+*Draft document for discussion purposes*
 
 ![INDY-AGENT-ARM: Location and Capabiliies Viewpoint](images/HBB-SSI-Agents&#32;v0.8.png)
 
