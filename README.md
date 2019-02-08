@@ -272,7 +272,7 @@ TODO
 
 ![DID 6-Layer Model: Steps, Documentation, and Precidents Viewpoint](images/DID-6-Layer-Steps-Docs-Predicents.png)
 
-Figure 7. DID 6-Layer Model: Steps, Documentation, and Precidents Viewpoint
+Figure A.1. DID 6-Layer Model: Steps, Documentation, and Precidents Viewpoint
 
 #### Narration
 
@@ -284,8 +284,24 @@ TODO
 
 ![DID 6-Layer Model: Documentation Cross-reference Viewpoint](images/DID-6-Layer-Steps-Docs-Xref.png)
 
-Figure 8. DID 6-Layer Model: Documentation Cross-reference Viewpoint
+Figure A.2. DID 6-Layer Model: Documentation Cross-reference Viewpoint
 
 #### Narration
 
 TODO
+
+## Appendix B - Indy Agent Architecture Reference Model (INDY-AGENT-ARM)
+
+TODO
+
+### Location and Capabiliies Viewpoint
+
+TODO
+
+![INDY-AGENT-ARM: Location and Capabiliies Viewpoint](images/HBB-SSI-Agents&#32;v0.8.png)
+
+Figure B.1.INDY-AGENT-ARM: Location and Capabiliies Viewpoint
+
+#### Narration
+
+To understand the INDY-AGENT-ARM more fully, read the INDY HIPE entitled [0002: Agents](https://github.com/hyperledger/indy-hipe/blob/31df09b3949021d790ebc364d7da1b9347821d87/text/0002-agents/README.md).
