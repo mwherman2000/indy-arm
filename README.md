@@ -252,7 +252,6 @@ The DID Subjects viewpoint is an example of an alternative (focused) viewpoint t
 ![ DID Subjects Viewpoint](images/HBB-Indy-Sovrin&#32;ARM&#32;v0.21-DID&#32;Subjects-Principles.png)
 Figure 6. DID Subjects Viewpoint
 
-
 #### Narration
 
 See the cooresponding numbered elements in the [Narration](https://github.com/mwherman2000/indy-arm/blob/master/README.md#narration) section for the All-in viewpoint.
@@ -261,13 +260,25 @@ See the cooresponding numbered elements in the [Narration](https://github.com/mw
 
 TODO
 
-### Steps, Documentation, and Precidens Viewpoint
+### Steps, Documentation, and Precidents Viewpoint
 
 TODO
 
-![DID 6-Layer Model](images/DID-6-Layer-Steps-Docs-Predicents.png)
-Figure 4. DID 6-Layer Model
+![DID 6-Layer Model: Steps, Documentation, and Precidents Viewpoint](images/DID-6-Layer-Steps-Docs-Predicents.png)
+Figure 7. DID 6-Layer Model: Steps, Documentation, and Precidents Viewpoint
 
 #### Narration
 
 TODO
+
+### Documentation Cross-reference Viewpoint
+
+TODO
+
+![DID 6-Layer Model: Documentation Cross-reference Viewpoint](images/DID-6-Layer-Steps-Docs-Xref.png)
+Figure 8. DID 6-Layer Model: Documentation Cross-reference Viewpoint
+
+#### Narration
+
+TODO
+
