@@ -13,7 +13,7 @@ The purpose of the Hyperledger Indy/Sovrin (Indy) Comprehensive Architecture Ref
 
 The primary audience for this article are: software people (software architects and developers), enterprise architects, and anyone new to the Hyperledger Indy project or the field of self-sovereign identity (SSI) looking to find a fast on-ramp.
 
-## Goals 
+## Goals
 
 The goals of the INDY ARM are:
 
@@ -281,4 +281,3 @@ Figure 8. DID 6-Layer Model: Documentation Cross-reference Viewpoint
 #### Narration
 
 TODO
-
