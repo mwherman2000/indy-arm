@@ -196,7 +196,7 @@ Figure 1. Hyperledger Indy/Sovrin Comprehensive Architecture Reference Model (IN
 40. Credential Registry Agent Node is a repository for persisting, managing, and interacting with Verified Credentials. It’s implementation is based on technologies similar to those used to implement Cloud Edge Agents.
 41. DID Resolver Lightweight Node is a component that is used by Edge Agent (24) and Cloud Agent (31) applications to resolve a id (DID) (13) into a specific DID Document (16) (assuming the DID Document has been persisted to the Indy Ledger (36) and (17)). The DID Resolver Lightweight Node relies on a Ledger Node (35) and (37) to gain access to the Indy Transactions (17) on the Indy Ledger (36). The DID Document is returned as an attribute of a DID Resolver Response (43) a the DID Resolver Node.
 42. The DID Resolver Response is returned by the DID Resolver Lightweight Node (40) in response to a request to resolve a particular id (DID). The DID Resolver Response contains a didDocument attribute that, in turn, contains the corresponding DID Document (16) (assuming the DID Document exists on the Indy Ledger (36), (42) and (17)).
-43.  The DIF Universal-Resolver Project distribution is used to implement the DID Resolver Lightweight Node (41) functionality.
+43. The DIF Universal-Resolver Project distribution is used to implement the DID Resolver Lightweight Node (41) functionality.
 44. **Application Layer – DID Data Model** captures the key application-level model elements related to DIDs such as SEND_NYM Message (45).
 45. A SEND_NYM message is used to create a Verifiable DID on the Ledger (17)
 46. The identifier attribute in the SEND_NYM message is associated (assigned the value) of the DID of the steward/trustee.
