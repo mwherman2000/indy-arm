@@ -101,7 +101,7 @@ The main or primary view is the All-in viewpoint.  In addition, based on the nee
 2. [DID Data Model and DID Document Data Model Viewpoint](./README.md#2-did-data-model-and-did-document-data-model-viewpoint)
 3. [DID Resolution Viewpoint](./README.md#3-did-resolution-viewpoint)
 4. [Agent and Wallet Viewpiont](./README.md#4-agent-and-wallet-viewpoint)
-5. [DID Entity (DID Subject) Viewpoint]()
+5. [DID Entity (DID Subject) Viewpoint](./README.md#5-did-entity-did-subject-viewpoint)
 
 ### 1. All-in Viewpoint
 
