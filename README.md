@@ -113,6 +113,7 @@ The Narration section that follows the graphic includes a description of each of
 Click on the graphic to enlarge it in a separate browser tab.  Suggestion: Drag the new browser tab onto a second monitor if you have one.
 
 ![INDY ARM: All-in Viewpoint](images/HBB-Indy-Sovrin&#32;ARM&#32;v0.21.png)
+
 Figure 1. Hyperledger Indy/Sovrin Comprehensive Architecture Reference Model (INDY ARM): All-in Viewpoint
 
 #### Narration
@@ -210,6 +211,7 @@ Figure 1. Hyperledger Indy/Sovrin Comprehensive Architecture Reference Model (IN
 The DID Data Model and DID Document Data Model viewpoint is an example of alternative viewpoint that illustrates how _cookie cutter_ subviews of the All-in viewpoint can be created from the same underlying INDY ARM moodel.
 
 ![INDY ARM: DID Data Model and DID Document Data Model](images/HBB-Indy-Sovrin&#32;ARM&#32;v0.21-Data&#32;Models.png)
+
 Figure 2. DID Data Model and DID Document Data Model Viewpoint
 
 #### Nararation
@@ -221,6 +223,7 @@ See the cooresponding numbered elements in the [Narration](https://github.com/mw
 The DID Resolution viewpoint is an example of yet another alternative viewpoint that illustrates how _cookie cutter_ subviews of the All-in viewpoint can be created from the same underlying INDY ARM moodel.
 
 ![INDY ARM: DID Resolution Viewpoint](images/HBB-Indy-Sovrin&#32;ARM&#32;v0.21-DID&#32;Resolution.png)
+
 Figure 3. DID Resolution Viewpoint
 
 #### Narration
@@ -232,6 +235,7 @@ See the cooresponding numbered elements in the [Narration](https://github.com/mw
 The Agent and Wallet viewpoint is an example of an alternative (focused) viewpoint that depicts the architectural elements that comprise an Indy Agent and an Indy Wallet.
 
 ![INDY ARM: Agent and Wallet Viewpoint](images/HBB-Indy-Sovrin&#32;ARM&#32;v0.21-Edge-Agent-Wallet.png)
+
 Figure 4. Agent and Wallet Viewpoint
 
 #### Narration
@@ -243,6 +247,7 @@ See the cooresponding numbered elements in the [Narration](https://github.com/mw
 The DID Entity vuewpoint is an example of an alternative (focused) viewpoint that depicts the architectural elements that rrealize a DID Entity (DID SUbject).
 
 ![DID Entity (DID Subject) Viewpoint](images/HBB-Indy-Sovrin&#32;ARM&#32;v0.21-DID&#32;Entity.png)
+
 Figure 5. DID Entity (DID Subject) Viewpoint
 
 ### 6. DID Subjects Viewpoint
@@ -250,6 +255,7 @@ Figure 5. DID Entity (DID Subject) Viewpoint
 The DID Subjects viewpoint is an example of an alternative (focused) viewpoint that depicts the architectural elements that rrealize a DID Entity (DID SUbject).
 
 ![ DID Subjects Viewpoint](images/HBB-Indy-Sovrin&#32;ARM&#32;v0.21-DID&#32;Subjects-Principles.png)
+
 Figure 6. DID Subjects Viewpoint
 
 #### Narration
@@ -265,6 +271,7 @@ TODO
 TODO
 
 ![DID 6-Layer Model: Steps, Documentation, and Precidents Viewpoint](images/DID-6-Layer-Steps-Docs-Predicents.png)
+
 Figure 7. DID 6-Layer Model: Steps, Documentation, and Precidents Viewpoint
 
 #### Narration
@@ -276,6 +283,7 @@ TODO
 TODO
 
 ![DID 6-Layer Model: Documentation Cross-reference Viewpoint](images/DID-6-Layer-Steps-Docs-Xref.png)
+
 Figure 8. DID 6-Layer Model: Documentation Cross-reference Viewpoint
 
 #### Narration
