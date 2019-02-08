@@ -101,6 +101,7 @@ The main or primary view is the All-in viewpoint.  In addition, based on the nee
 2. [DID Data Model and DID Document Data Model Viewpoint](./README.md#2-did-data-model-and-did-document-data-model-viewpoint)
 3. [DID Resolution Viewpoint](./README.md#3-did-resolution-viewpoint)
 4. [Agent and Wallet Viewpiont](./README.md#4-agent-and-wallet-viewpoint)
+5. [DID Entity (DID Subject) Viewpoint]()
 
 ### 1. All-in Viewpoint
 
@@ -231,6 +232,17 @@ The Agent and Wallet viewpoint is an example of an alternative (focused) viewpoi
 
 ![INDY ARM: Agent and Wallet Viewpoint](images/HBB-Indy-Sovrin&#32;ARM&#32;v0.21-Edge-Agent-Wallet.png)
 Figure 4. Agent and Wallet Viewpoint
+
+#### Narration
+
+See the cooresponding numbered elements in the [Narration](https://github.com/mwherman2000/indy-arm/blob/master/README.md#narration) section for the All-in viewpoint.
+
+### 5. DID Entity (DID Subject) Viewpoint
+
+The DID Entity (DID Subject) is an example of an alternative (focused) viewpoint that depicts the architectural elements that rrealize a DID Entity (DID SUbject).
+
+![DID Entity (DID Subject) Viewpoint](images/HBB-Indy-Sovrin&#32;ARM&#32;v0.21-DID&#32;Entity.png)
+Figure 5. DID Entity (DID Subject) Viewpoint
 
 #### Narration
 
