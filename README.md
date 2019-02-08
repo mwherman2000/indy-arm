@@ -1,4 +1,4 @@
-# indy-arm - Hyperledger Indy/Sovrin Comprehensive Architecture Reference Model (INDY ARM)
+# indy-arm - Hyperledger Indy/Sovrin/DID Comprehensive Architecture Reference Model (INDY ARM)
 _Draft document for discussion purposes_
 
 - Michael Herman (Toronto/Calgary/Seattle)
@@ -9,7 +9,7 @@ Update cycle: As required – sometimes several times in a single day.
 
 ## Overview
 
-The purpose of the Hyperledger Indy/Sovrin (Indy) Comprehensive Architecture Reference Model (INDY ARM) is to provide a complete, reliable, precise, visual reference for the concepts presented in the draft Decentralized Identifiers (DIDs) specification (link).
+The purpose of the  Hyperledger Indy/Sovrin/DID Comprehensive Architecture Architecture Reference Model (INDY ARM) is to provide a complete, reliable, precise, visual reference for the concepts presented in the draft Decentralized Identifiers (DIDs) specification (link).
 
 The primary audience for this article are: software people (software architects and developers), enterprise architects, and anyone new to the Hyperledger Indy project or the field of self-sovereign identity (SSI) looking to find a fast on-ramp.
 
@@ -114,7 +114,7 @@ Click on the graphic to enlarge it in a separate browser tab.  Suggestion: Drag 
 
 ![INDY ARM: All-in Viewpoint](images/HBB-Indy-Sovrin&#32;ARM&#32;v0.21.png)
 
-Figure 1. Hyperledger Indy/Sovrin Comprehensive Architecture Reference Model (INDY ARM): All-in Viewpoint
+Figure 1. Hyperledger Indy/Sovrin/DID Comprehensive Architecture Reference Model (INDY ARM): All-in Viewpoint
 
 #### Narration
 
