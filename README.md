@@ -73,6 +73,9 @@ NOTE: Some of the elements depicted in the INDY ARM have been influenced by the 
 18. Indy Ledger Local Node State (Replica) was changed to Local Ledger State (Replica).
 19. Partitioned the DID Data Model (old 12) perspective into DID Document Data Model (44) and DID Data Model (new 12) perspectives.
 20. Added elements (44) to (50) to support change 19.
+21. Renamed "Service" elements to "Service Endpoint" where appropriate (51) through (56)
+22. Numbered Service Endpoint elements (51) through (56)
+23. Adjusted position of the some of the numbers
 
 ### Architecture Perspectives
 
@@ -112,7 +115,7 @@ The Narration section that follows the graphic includes a description of each of
 
 Click on the graphic to enlarge it in a separate browser tab.  Suggestion: Drag the new browser tab onto a second monitor if you have one.
 
-![INDY ARM: All-in Viewpoint](images/HBB-Indy-Sovrin&#32;ARM&#32;v0.21.png)
+![INDY ARM: All-in Viewpoint](images/HBB-Indy-Sovrin&#32;ARM&#32;v0.23.png)
 
 Figure 1. Hyperledger Indy/Sovrin/DID Comprehensive Architecture Reference Model (INDY ARM): All-in Viewpoint
 
@@ -205,8 +208,16 @@ Figure 1. Hyperledger Indy/Sovrin/DID Comprehensive Architecture Reference Model
 48. The verkey subattribute in the SEND_NYM message is associated (assigned the value) of the verkey of the subject.
 49. **Technology Layer – DID Document Data Model** captures the key technology-level model elements such as the DID Ledger State (17) and Indy NYM Transaction (50).
 50. Indy NYM Transaction
+51. Indy Agent Service Endpoint (Cloud Agent 1)
+52. Indy Agent Service Endpoint (Cloud Agent 2)
+53. Indy Ledger Node Service Endpoint (Ledger Node 1)
+54. Indy Ledger Node Service Endpoint (Ledger Node 2)
+55. Indy Credential Registry Service Endpoint
+56. DID Resolver Service Endpoint
 
 ### 2. DID Data Model and DID Document Data Model Viewpoint
+
+*Draft document for discussion purposes*
 
 The DID Data Model and DID Document Data Model viewpoint is an example of alternative viewpoint that illustrates how _cookie cutter_ subviews of the All-in viewpoint can be created from the same underlying INDY ARM moodel.
 
@@ -220,6 +231,8 @@ See the cooresponding numbered elements in the [Narration](https://github.com/mw
 
 ### 3. DID Resolution Viewpoint
 
+*Draft document for discussion purposes*
+
 The DID Resolution viewpoint is an example of yet another alternative viewpoint that illustrates how _cookie cutter_ subviews of the All-in viewpoint can be created from the same underlying INDY ARM moodel.
 
 ![INDY ARM: DID Resolution Viewpoint](images/HBB-Indy-Sovrin&#32;ARM&#32;v0.21-DID&#32;Resolution.png)
@@ -231,6 +244,8 @@ Figure 3. DID Resolution Viewpoint
 See the cooresponding numbered elements in the [Narration](https://github.com/mwherman2000/indy-arm/blob/master/README.md#narration) section for the All-in viewpoint.
 
 ### 4. Agent and Wallet Viewpoint
+
+*Draft document for discussion purposes*
 
 The Agent and Wallet viewpoint is an example of an alternative (focused) viewpoint that depicts the architectural elements that comprise an Indy Agent and an Indy Wallet.
 
@@ -244,6 +259,8 @@ See the cooresponding numbered elements in the [Narration](https://github.com/mw
 
 ### 5. DID Entity Viewpoint
 
+*Draft document for discussion purposes*
+
 The DID Entity vuewpoint is an example of an alternative (focused) viewpoint that depicts the architectural elements that rrealize a DID Entity (DID SUbject).
 
 ![DID Entity (DID Subject) Viewpoint](images/HBB-Indy-Sovrin&#32;ARM&#32;v0.21-DID&#32;Entity.png)
@@ -251,6 +268,8 @@ The DID Entity vuewpoint is an example of an alternative (focused) viewpoint tha
 Figure 5. DID Entity (DID Subject) Viewpoint
 
 ### 6. DID Subjects Viewpoint
+
+*Draft document for discussion purposes*
 
 The DID Subjects viewpoint is an example of an alternative (focused) viewpoint that depicts the architectural elements that rrealize a DID Entity (DID SUbject).
 
@@ -268,7 +287,7 @@ TODO
 
 ### Steps, Documentation, and Precidents Viewpoint
 
-TODO
+*Draft document for discussion purposes*
 
 ![DID 6-Layer Model: Steps, Documentation, and Precidents Viewpoint](images/DID-6-Layer-Steps-Docs-Predicents.png)
 
@@ -280,7 +299,7 @@ TODO
 
 ### Documentation Cross-reference Viewpoint
 
-TODO
+*Draft document for discussion purposes*
 
 ![DID 6-Layer Model: Documentation Cross-reference Viewpoint](images/DID-6-Layer-Steps-Docs-Xref.png)
 
@@ -295,8 +314,6 @@ TODO
 To understand the INDY-AGENT-ARM more fully, read the [INDY HIPE](https://github.com/hyperledger/indy-hipe/pulls) entitled [0002: Agents](https://github.com/hyperledger/indy-hipe/blob/31df09b3949021d790ebc364d7da1b9347821d87/text/0002-agents/README.md).
 
 ### Location and Capabiliies Viewpoint
-
-*Draft document for discussion purposes*
 
 ![INDY-AGENT-ARM: Location and Capabiliies Viewpoint](images/HBB-SSI-Agents&#32;v0.8.png)
 
