@@ -85,7 +85,7 @@ Horizontally, the INDY ARM is partitioned into 4 perspectives:
 - Ecosystem Architecture (B)
 - DID Data Model (C)
 - DID Document Data Model (D)
-- [Verified Credentials (VC) Data Model (Future)]
+- [Verified Credentials (VC) Data Model] (Future)
 - Principles (E)
 
 ### Architecture Domains
