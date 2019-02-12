@@ -315,10 +315,38 @@ To understand the INDY-AGENT-ARM more fully, read the [INDY HIPE](https://github
 
 ### Location and Capabiliies Viewpoint
 
-![INDY-AGENT-ARM: Location and Capabiliies Viewpoint](images/HBB-SSI-Agents&#32;v0.8.png)
+![Indy Agent Architecture Reference Model (INDY-AGENT-ARM)](images/HBB-SSI-Agents&#32;v0.8.png)
 
-Figure B.1.INDY-AGENT-ARM: Location and Capabiliies Viewpoint
+Figure B.1. Indy Agent Architecture Reference Model (INDY-AGENT-ARM)
 
 #### Narration
 
 To understand the INDY-AGENT-ARM more fully, read the [INDY HIPE](https://github.com/hyperledger/indy-hipe/pulls) entitled [0002: Agents](https://github.com/hyperledger/indy-hipe/blob/31df09b3949021d790ebc364d7da1b9347821d87/text/0002-agents/README.md) written by Daniel Hardman.
+
+## Appendix C - Internet Naming Continuum
+
+TODO
+
+*Draft document for discussion purposes*
+
+![Internet Naming Continuum](images/HBB-Indy-Sovrin-Internet&#32;Naming&#32;Continuum&#32;v0.2.png)
+
+Figure C.1. Internet Naming Continuum
+
+#### Narration
+
+TODO
+
+## Appendix D - DID 7-Layer Model
+
+TODO
+
+*Draft document for discussion purposes*
+
+![DID 7-Layer Model](images/DID-7-Layer-Steps.png)
+
+Figure D.1. DID 7-Layer Model
+
+#### Narration
+
+TODO
