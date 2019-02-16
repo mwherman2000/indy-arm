@@ -233,7 +233,9 @@ See the cooresponding numbered elements in the [Narration](https://github.com/mw
 
 *Draft document for discussion purposes*
 
-The DID Resolution viewpoint is an example of yet another alternative viewpoint that illustrates how _cookie cutter_ subviews of the All-in viewpoint can be created from the same underlying INDY ARM moodel.
+The DID Resolution viewpoint is an example of yet another alternative viewpoint that illustrates how _cookie cutter_ subviews of the All-in viewpoint can be created from the same underlying INDY ARM model.
+
+NOTE: Also refer to the discussion in [Appendix E - DID Resolution: Path from a DID to a Real-life Something](https://github.com/mwherman2000/indy-arm/blob/master/README.md#appendix-e---did-resolution-path-from-a-did-to-a-real-life-something).
 
 ![INDY ARM: DID Resolution Viewpoint](images/HBB-Indy-Sovrin&#32;ARM&#32;v0.21-DID&#32;Resolution.png)
 
