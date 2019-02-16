@@ -359,6 +359,7 @@ TODO
 
 ### Companion Articles
 - [What is a DID?](https://hyperonomy.com/2019/01/24/what-is-a-did/)
+- [INDY-ARM - DID Resolution Viewpoint](./README.md#3-did-resolution-viewpoint)
 
 ### Path from a DID to a Real-life Something Viewpoint
 
