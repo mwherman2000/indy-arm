@@ -98,7 +98,7 @@ Vertically, the INDY ARM is divided into 3 architecture domains that span the 4 
 
 ## INDY ARM Viewpoints
 
-The main or primary view is the All-in viewpoint.  In addition, based on the needs of various discussion forums (e.g. did-spec, did-resoltuon, Hyperledger Indy Rocketchat channels, etc.), a number of additional "alternative" or focused viewpoints have been created.
+The main or primary view is the All-in viewpoint. In addition, based on the needs of various discussion forums (e.g. did-spec, did-resoltuon, Hyperledger Indy Rocketchat channels, etc.), a number of additional "alternative" or focused viewpoints have been created.
 
 1. [All-in Viewpoint](./README.md#1-all-in-viewpoint) (first time readers should focus here)
 2. [DID Data Model and DID Document Data Model Viewpoint](./README.md#2-did-data-model-and-did-document-data-model-viewpoint)
@@ -113,7 +113,7 @@ The INDY ARM is illustrated in the following “All-in” viewpoint. The INDY AR
 
 The Narration section that follows the graphic includes a description of each of the numbered bullets.
 
-Click on the graphic to enlarge it in a separate browser tab.  Suggestion: Drag the new browser tab onto a second monitor if you have one.
+Click on the graphic to enlarge it in a separate browser tab. Suggestion: Drag the new browser tab onto a second monitor if you have one.
 
 ![INDY ARM: All-in Viewpoint](images/HBB-Indy-Sovrin&#32;ARM&#32;v0.23.png)
 
@@ -126,9 +126,9 @@ Figure 1. Hyperledger Indy/Sovrin/DID Comprehensive Architecture Reference Model
 2. An Issuer issues a self-sovereign identity (SSI) for a Something; e.g. a Birth Certificate or a Purchase Order (3). In this example, the SSI is for a Thing (10); in particular, a completed and approved Purchase Order (3) (or Birth Certificate). The Purchase Order is issued to a Holder. Both the Issuer and the Holder work for a fictitious company called Acme Corporation.
 3. SSI for a Something (e.g. Birth Certificate, Purchase Order) issued by the Issuer @ Acme (2).
 4. The Holder @ Acme accepts the SSI for the Thing (a Purchase Order) from the Issuer (2). In turn, the Holder @ Acme presents the SSI for the Purchase Order to a Holder at Baker Limited. The Holder @ Baker receives the SSI for the Purchase Order from the Holder @ Acme (4).
-5.  An Inspector @ Baker may request that the Holder @ Baker present the SSI for the Purchase Order to him/her/it. The Inspector @ Baker receives the SSI from the Holder @ Baker.
+5. An Inspector @ Baker may request that the Holder @ Baker present the SSI for the Purchase Order to him/her/it. The Inspector @ Baker receives the SSI from the Holder @ Baker.
 6. The Inspector @ Baker (or any Holder) can ask for the SSI for the Purchase Order to be verified by a Verifier.
-7. There is a set of Business Services (e.g, Issue, Store, Request, Verify, Register, etc.) that support the above processes.  These Business Services are supported by services exposed by the Applications Architecture Layer (23).
+7. There is a set of Business Services (e.g, Issue, Store, Request, Verify, Register, etc.) that support the above processes. These Business Services are supported by services exposed by the Applications Architecture Layer (23).
 8. **Business Layer – DID Data Model** captures the key business-level model elements such as Actor (9), Things (10), and (Business) Processes (37).
 9. An Actor is “a business entity that is capable of performing behavior.” [ARCHIMATE]
     - Examples of Actors include Persons, Organizations, and Software Agents.
@@ -350,3 +350,70 @@ Figure D.1. DID 7-Layer Model
 #### Narration
 
 TODO
+
+## Appendix E - DID Resolution: Path from a DID to a Real-life Something
+
+*Draft document for discussion purposes*
+
+### Companion Articles
+- [What is a DID?](https://hyperonomy.com/2019/01/24/what-is-a-did/)
+
+### Path from a DID to a Real-life Something Viewpoint
+
+The following graphic illustrates the path (flow) of a client app trying to: 
+a) communicate/interact with, and/or 
+b) access the metadata about a real-life something by using a Decentralized Identifier (id (DID)).
+
+That is, in (almost) 10 steps or less, how to you get from an id (DID) attribute on the left to a Real-Life Something on the right?
+
+2019-01-08 NOTE: The ultimate goal is to synthesize a simple(r) data model – not a more complex one. However, the interim analysis phase (tearing things apart) is expectedly going to result in a data model that is visually more complex. From this analysis model, we can hopefully synthesize a data model that is simple(r).
+
+NOTE: Click on the graphic to enlarge it.
+
+![DID Resolution - Path from a DID to a Real-life Something](images/DID%20to%20Real-life%20Something%20v0.4.png)
+
+Figure E.1. DID Resolution: Path from a DID to a Real-life Something
+
+#### Narration
+
+0. A DID Document contains an id (DID) attribute which is the unique identifier or key for a DID Document.
+    - A Real-Life Something can be associated with more than one DID Document (and by implication, more than one id (DID)).
+    - A DID Document (and its id (DID)) can only refer to one Real-Life Something.
+1.	Client App (or Service) is interested in either:
+    - Communicating or interacting with a Real-Life Something.
+    - Gaining knowledge about a Real-Life Something. (Let’s refer this knowledge as Metadata about the Real-Life Something.)
+    - NOTE: A Real-Life Something can be either a Real-Life Actor or a Real-Life Thing.
+2.	Client App calls DID Resolver to retrieve the DID Document that corresponds to a particular id (DID).
+3.	DID Resolver uses the id (DID) as a key (unique identifier) to retrieve the corresponding DID Document from a DID Document Repository (14).
+4.	DID Resolver, in turn, returns the DID Document to the Client App.
+5.	The DID Document contains a service (endpoint) attribute that points to the Software Service Endpoint for the entity where:
+    - Client App can communicate or interact with a particular Virtual (Real-Life) Something (primary use case).
+    - Client App can retrieve additional information about a particular Real-Life Something (aka Metadata about the Virtual (Real-Life) Something) (secondary use case and, potentially, a sub-case of the primary use case).
+6.	Client App calls Software Service Endpoint to either: a) communicate/interact with, or (b) retrieve metadata about a Virtual (Real-Life) Something.
+7.	[Primary Use Case] Software Service Endpoint enables Client App to communicate or interact with a particular Virtual (Real-Life) Something.
+8.	Virtual Actor is a Virtual (Real-Life) Something that is associated with a Real-Life Actor (9).
+9.	Real-Life Actor is a Real-Life Something that is associated with a Virtual (Real-Life) Actor (8).
+10.	Virtual Thing is a Virtual (Real-Life) Something that is associated with a Real-Life Thing (11). A Virtual Thing has an Owner. The Owner of a Virtual Thing is a Virtual Actor.
+11.	Real-Life Thing is a Real-Life Something that is associated with a Virtual (Real-Life) Thing (10). A Real-Life Thing has an Owner. The Owner of a Real-Life Thing is a Real-Life Actor.
+12.	[Secondary Use Case] Client App retrieves Metadata Document about Virtual (Real-Life) Something from the Metadata Document Repository (15) by calling Software Service Endpoint. As in the primary use case, the Virtual (Real-Life) Something can be a Virtual Actor or a Virtual Thing.
+13.	Software Service Endpoint returns the Metadata Document for the particular Virtual (Real-Life) Something to the Client App; that is, the knowledge about the Virtual (Real-Life) Something that the Client App was originally interested in Step 1.
+14.	DID Document Repository is a repository of DID Documents indexed by each document’s id (DID).
+15.	Metadata Document Repository is a repository of Metadata Documents.
+
+#### Additional Notes
+
+1. An Actor is simply defined as being different from a Thing because an Actor is “a business entity that is capable of performing behavior” [ARCHIMATE].
+2. A Thing has an Owner.
+3. The Owner of a Thing is an Actor.
+
+### Questions
+
+1. Can the data from the Metadata Document (6) be merged into/placed inside the DID Document (0)?  If so how?
+   - Daniel Hardman (2019-01-07): A DID Document can contain additional sections besides those required by the spec – but I am not aware of a way to describe those sections in an interoperable way. So adding extra metadata to the DID Document would require a new convention or standard to be described.
+2. Related but separate from the first question, where does the Indy Schema effort/project artifacts (e.g. Schema Documents) fit into the above graphic?
+   - Daniel Hardman (2019-01-07): “Schema” is currently used mostly to describe credentials. We could apply the concern more broadly (e.g., to A2A messages), but there is not a common understanding of anything broader.
+3. Is there a third repository (Schema Document Repository) that needs to be added to the graphic? …or is schema stored as “just another” DID Document in the DID Document Repository?  If so, in the most likely scenario, is there a separate DID Document Repository that acts as a global Schema Document Repository. Are Schema Documents resolved through the same DID Resolver (2)?
+   - Daniel Hardman (2019-01-07): Schemas for credentials are stored on the ledger – not in DID Documents, but in separate SCHEMA transactions. A schema lookup is a ledger lookup, but not a DID Document lookup. Schemas are not indexed by DID, since they do not require an endpoint or key rotation construct–but rather by an identifier that helps the ledger walk its own state trie with maximum efficiency
+4. Is the extended data for an entity stored in the original DID Document (0) (based on the Extensibility feature of a DID Document) and can/does this feature explicitly rely on Schema?
+    - TODO
+
