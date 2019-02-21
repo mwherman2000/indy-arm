@@ -249,7 +249,7 @@ TODO
 
 ![INDY ARM: DID Resolver Architecture](images/HBB-DID-Resolver-Architecture&#32;v0.1.png)
 
-Figure 3b. DID Resolver Architecture
+Figure 3b. DID Resolver Architecture 
 
 #### Narration
 
