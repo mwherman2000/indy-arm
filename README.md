@@ -239,7 +239,17 @@ NOTE: Also refer to the discussion in [Appendix E - DID Resolution: Path from a 
 
 ![INDY ARM: DID Resolution Viewpoint](images/HBB-Indy-Sovrin&#32;ARM&#32;v0.21-DID&#32;Resolution.png)
 
-Figure 3. DID Resolution Viewpoint
+Figure 3a. DID Resolution Viewpoint
+
+TODO
+
+*Draft document for discussion purposes*
+
+TODO
+
+![INDY ARM: DID Resolver Architecture](images/HBB-DID-Resolver-Architecture&#32;v0.1.png)
+
+Figure 3b. DID Resolver Architecture
 
 #### Narration
 
