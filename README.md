@@ -13,42 +13,42 @@ Update cycle: As required – sometimes several times in a single day.
 
 - [indy-arm - Hyperledger Indy/Sovrin/DID Comprehensive Architecture Reference Model (INDY ARM)](#indy-arm---hyperledger-indysovrindid-comprehensive-architecture-reference-model-indy-arm)
   - [Table of Contents](#table-of-contents)
-  - [Overview](#overview)
-  - [Goals](#goals)
-  - [Principles](#principles)
-  - [Drivers](#drivers)
-  - [Companion Articles](#companion-articles)
-  - [Tooling](#tooling)
-  - [INDY ARM](#indy-arm)
-    - [Recent Feedback and Changes](#recent-feedback-and-changes)
-    - [Architecture Perspectives](#architecture-perspectives)
-    - [Architecture Domains](#architecture-domains)
-  - [INDY ARM Viewpoints](#indy-arm-viewpoints)
-    - [1. All-in Viewpoint](#1-all-in-viewpoint)
+  - [Overview **^**](#overview)
+  - [Goals **^**](#goals)
+  - [Principles **^**](#principles)
+  - [Drivers **^**](#drivers)
+  - [Companion Articles **^**](#companion-articles)
+  - [Tooling **^**](#tooling)
+  - [INDY ARM **^**](#indy-arm)
+    - [Architecture Perspectives **^**](#architecture-perspectives)
+    - [Architecture Domains **^**](#architecture-domains)
+    - [Recent Feedback and Changes **^**](#recent-feedback-and-changes)
+  - [INDY ARM Viewpoints **^**](#indy-arm-viewpoints)
+    - [1. All-in Viewpoint **^**](#1-all-in-viewpoint)
       - [Narration](#narration)
-    - [2. DID Data Model and DID Document Data Model Viewpoint](#2-did-data-model-and-did-document-data-model-viewpoint)
+    - [2. DID Data Model and DID Document Data Model Viewpoint **^**](#2-did-data-model-and-did-document-data-model-viewpoint)
       - [Nararation](#nararation)
-    - [3. DID Resolution Viewpoint](#3-did-resolution-viewpoint)
+    - [3. DID Resolution Viewpoint **^**](#3-did-resolution-viewpoint)
       - [Narration](#narration-1)
-    - [4. Agent and Wallet Viewpoint](#4-agent-and-wallet-viewpoint)
+    - [4. Agent and Wallet Viewpoint **^**](#4-agent-and-wallet-viewpoint)
       - [Narration](#narration-2)
-    - [5. DID Entity Viewpoint](#5-did-entity-viewpoint)
-    - [6. DID Subjects Viewpoint](#6-did-subjects-viewpoint)
+    - [5. DID Entity Viewpoint **^**](#5-did-entity-viewpoint)
+    - [6. DID Subjects Viewpoint **^**](#6-did-subjects-viewpoint)
       - [Narration](#narration-3)
-  - [Appendix A - DID 6-Layer Model](#appendix-a---did-6-layer-model)
+  - [Appendix A - DID 6-Layer Model **^**](#appendix-a---did-6-layer-model)
     - [Steps, Documentation, and Precidents Viewpoint](#steps-documentation-and-precidents-viewpoint)
       - [Narration](#narration-4)
     - [Documentation Cross-reference Viewpoint](#documentation-cross-reference-viewpoint)
       - [Narration](#narration-5)
-  - [Appendix B - Indy Agent Architecture Reference Model (INDY-AGENT-ARM)](#appendix-b---indy-agent-architecture-reference-model-indy-agent-arm)
+  - [Appendix B - Indy Agent Architecture Reference Model (INDY-AGENT-ARM) **^**](#appendix-b---indy-agent-architecture-reference-model-indy-agent-arm)
     - [Location and Capabilities Viewpoint](#location-and-capabilities-viewpoint)
       - [Narration](#narration-6)
-  - [Appendix C - Internet Naming Continuum](#appendix-c---internet-naming-continuum)
+  - [Appendix C - Internet Naming Continuum **^**](#appendix-c---internet-naming-continuum)
       - [Narration](#narration-7)
-  - [Appendix D - DID 7-Layer Model](#appendix-d---did-7-layer-model)
+  - [Appendix D - DID 7-Layer Model **^**](#appendix-d---did-7-layer-model)
       - [Narration](#narration-8)
-  - [Appendix E - DID Resolution: Path from a DID to a Real-life Something](#appendix-e---did-resolution-path-from-a-did-to-a-real-life-something)
-    - [Companion Articles](#companion-articles-1)
+  - [Appendix E - DID Resolution: Path from a DID to a Real-life Something **^**](#appendix-e---did-resolution-path-from-a-did-to-a-real-life-something)
+    - [Companion Articles](#companion-articles)
     - [Path from a DID to a Real-life Something Viewpoint](#path-from-a-did-to-a-real-life-something-viewpoint)
       - [Narration](#narration-9)
       - [Additional Notes](#additional-notes)
@@ -56,13 +56,13 @@ Update cycle: As required – sometimes several times in a single day.
 
 <!-- /TOC -->
 
-## Overview
+## Overview [**^**](#table-of-contents)
 
 The purpose of the  Hyperledger Indy/Sovrin/DID Comprehensive Architecture Architecture Reference Model (INDY ARM) is to provide a complete, reliable, precise, visual reference for the concepts presented in the draft Decentralized Identifiers (DIDs) specification (link).
 
 The primary audience for this article are: software people (software architects and developers), enterprise architects, and anyone new to the Hyperledger Indy project or the field of self-sovereign identity (SSI) looking to find a fast on-ramp.
 
-## Goals
+## Goals [**^**](#table-of-contents)
 
 The goals of the INDY ARM are:
 
@@ -70,7 +70,7 @@ The goals of the INDY ARM are:
 - Enable software people to become more knowledge about and productive with the Hyperledger Indy software platform (and Sovrin governance framework) as quickly and as easily as possible.
 - Provide a common language of discourse for describing the current state architecture as well as potential future state architectures for the Indy ecosystem and community (with particular focus emphasis on the needs and requirements of software people).
 
-## Principles
+## Principles [**^**](#table-of-contents)
 
 The guiding principles for the INDY ARM are:
 
@@ -79,7 +79,7 @@ The guiding principles for the INDY ARM are:
 - Leverage open source modeling specifications and tools like ArchiMate and Archi, respectively
 - Leverage enterprise architecture concepts to explain Decentralized Identifiers and Entities in a way doesn’t detract from the adoption of the INDY ARM
 
-## Drivers
+## Drivers [**^**](#table-of-contents)
 
 The drivers for the INDY ARM are:
 
@@ -87,20 +87,39 @@ The drivers for the INDY ARM are:
 
 NOTE: Some of the elements depicted in the INDY ARM have been influenced by the Verified Credentials project – particularly, the business roles and processes in the Business Layer (1), the Local Ledger State (17) in the Technology Layer – Data Model (15), and the Credential Registry Agent Node (39) in the Technology Layer (30).
 
-## Companion Articles
+## Companion Articles [**^**](#table-of-contents)
 
 - [What is a DID?](https://hyperonomy.com/2019/01/24/what-is-a-did/)
 - [INDY ARM In Practice: End-to-end Path from id (DID) to a Real-Life Something](https://hyperonomy.com/2019/01/04/the-path-from-a-id-did-to-a-real-life-something/)
 - [Vision: Trusted Digital Web](https://hyperonomy.com/2018/12/31/the-trusted-digital-web/)
 
-## Tooling
+## Tooling [**^**](#table-of-contents)
 
 - [ArchiMate Modeling Specification: The Open Group ArchiMate 3.0 Specification](http://pubs.opengroup.org/architecture/archimate3-doc/)
 - [Archi Modeling Tool: Archi, the open source ArchiMate modeling platform](https://www.archimatetool.com/)
 
-## INDY ARM
+## INDY ARM [**^**](#table-of-contents)
 
-### Recent Feedback and Changes
+### Architecture Perspectives [**^**](#table-of-contents)
+
+Horizontally, the INDY ARM is partitioned into 4 perspectives:
+
+- Projects and Distributions (A)
+- Ecosystem Architecture (B)
+- DID Data Model (C)
+- DID Document Data Model (D)
+- [Verified Credentials (VC) Data Model] (Future)
+- Principles (E)
+
+### Architecture Domains [**^**](#table-of-contents)
+
+Vertically, the INDY ARM is divided into 3 architecture domains that span the 4 perspectives:
+
+- Business Layer (1) and (8)
+- Applications Layer (23), (44), and (12)
+- Technology Layer (30), (49), and (15)
+
+### Recent Feedback and Changes [**^**](#table-of-contents)
 
 1. Ledger Agent Node changed to Ledger Node (@danielhardman)
 2. Ledger Nodes: A2A Protocol corrected to Ledger-to-Ledger Protocol (@danielhardman)
@@ -126,26 +145,7 @@ NOTE: Some of the elements depicted in the INDY ARM have been influenced by the 
 22. Numbered Service Endpoint elements (51) through (56)
 23. Adjusted position of the some of the numbers
 
-### Architecture Perspectives
-
-Horizontally, the INDY ARM is partitioned into 4 perspectives:
-
-- Projects and Distributions (A)
-- Ecosystem Architecture (B)
-- DID Data Model (C)
-- DID Document Data Model (D)
-- [Verified Credentials (VC) Data Model] (Future)
-- Principles (E)
-
-### Architecture Domains
-
-Vertically, the INDY ARM is divided into 3 architecture domains that span the 4 perspectives:
-
-- Business Layer (1) and (8)
-- Applications Layer (23), (44), and (12)
-- Technology Layer (30), (49), and (15)
-
-## INDY ARM Viewpoints
+## INDY ARM Viewpoints [**^**](#table-of-contents)
 
 The main or primary view is the All-in viewpoint. In addition, based on the needs of various discussion forums (e.g. did-spec, did-resoltuon, Hyperledger Indy Rocketchat channels, etc.), a number of additional "alternative" or focused viewpoints have been created.
 
@@ -156,7 +156,7 @@ The main or primary view is the All-in viewpoint. In addition, based on the need
 5. [DID Entity Viewpoint](./README.md#5-did-entity-viewpoint)
 6. [DID Subjects Viewpoint](./README.md#6-did-subjects-viewpoint)
 
-### 1. All-in Viewpoint
+### 1. All-in Viewpoint [**^**](#indy-arm-viewpoints)
 
 The INDY ARM is illustrated in the following “All-in” viewpoint. The INDY ARM is an actual queryable model – it is not a drawing (e.g. a Visio or PowerPoint diagram).
 
@@ -264,7 +264,7 @@ Figure 1. Hyperledger Indy/Sovrin/DID Comprehensive Architecture Reference Model
 55. Indy Credential Registry Service Endpoint
 56. DID Resolver Service Endpoint
 
-### 2. DID Data Model and DID Document Data Model Viewpoint
+### 2. DID Data Model and DID Document Data Model Viewpoint [**^**](#indy-arm-viewpoints)
 
 *Draft document for discussion purposes*
 
@@ -278,7 +278,7 @@ Figure 2. DID Data Model and DID Document Data Model Viewpoint
 
 See the cooresponding numbered elements in the [Narration](https://github.com/mwherman2000/indy-arm/blob/master/README.md#narration) section for the All-in viewpoint.
 
-### 3. DID Resolution Viewpoint
+### 3. DID Resolution Viewpoint [**^**](#indy-arm-viewpoints)
 
 *Draft document for discussion purposes*
 
@@ -304,7 +304,7 @@ Figure 3b. DID Resolver Architecture
 
 See the cooresponding numbered elements in the [Narration](https://github.com/mwherman2000/indy-arm/blob/master/README.md#narration) section for the All-in viewpoint.
 
-### 4. Agent and Wallet Viewpoint
+### 4. Agent and Wallet Viewpoint [**^**](#indy-arm-viewpoints)
 
 *Draft document for discussion purposes*
 
@@ -318,7 +318,7 @@ Figure 4. Agent and Wallet Viewpoint
 
 See the cooresponding numbered elements in the [Narration](https://github.com/mwherman2000/indy-arm/blob/master/README.md#narration) section for the All-in viewpoint.
 
-### 5. DID Entity Viewpoint
+### 5. DID Entity Viewpoint [**^**](#indy-arm-viewpoints)
 
 *Draft document for discussion purposes*
 
@@ -328,7 +328,7 @@ The DID Entity vuewpoint is an example of an alternative (focused) viewpoint tha
 
 Figure 5. DID Entity (DID Subject) Viewpoint
 
-### 6. DID Subjects Viewpoint
+### 6. DID Subjects Viewpoint [**^**](#indy-arm-viewpoints)
 
 *Draft document for discussion purposes*
 
@@ -342,11 +342,11 @@ Figure 6. DID Subjects Viewpoint
 
 See the cooresponding numbered elements in the [Narration](https://github.com/mwherman2000/indy-arm/blob/master/README.md#narration) section for the All-in viewpoint.
 
-## Appendix A - DID 6-Layer Model
+## Appendix A - DID 6-Layer Model [**^**](#table-of-contents)
 
 TODO
 
-### Steps, Documentation, and Precidents Viewpoint
+### Steps, Documentation, and Precidents Viewpoint 
 
 *Draft document for discussion purposes*
 
@@ -370,7 +370,7 @@ Figure A.2. DID 6-Layer Model: Documentation Cross-reference Viewpoint
 
 TODO
 
-## Appendix B - Indy Agent Architecture Reference Model (INDY-AGENT-ARM)
+## Appendix B - Indy Agent Architecture Reference Model (INDY-AGENT-ARM) [**^**](#table-of-contents)
 
 To understand the INDY-AGENT-ARM more fully, read the [INDY HIPE](https://github.com/hyperledger/indy-hipe/pulls) entitled [0002: Agents](https://github.com/hyperledger/indy-hipe/blob/31df09b3949021d790ebc364d7da1b9347821d87/text/0002-agents/README.md) written by Daniel Hardman.
 
@@ -384,7 +384,7 @@ Figure B.1. Indy Agent Architecture Reference Model (INDY-AGENT-ARM)
 
 To understand the INDY-AGENT-ARM more fully, read the [INDY HIPE](https://github.com/hyperledger/indy-hipe/pulls) entitled [0002: Agents](https://github.com/hyperledger/indy-hipe/blob/31df09b3949021d790ebc364d7da1b9347821d87/text/0002-agents/README.md) written by Daniel Hardman.
 
-## Appendix C - Internet Naming Continuum
+## Appendix C - Internet Naming Continuum [**^**](#table-of-contents)
 
 TODO
 
@@ -398,7 +398,7 @@ Figure C.1. Internet Naming Continuum
 
 TODO
 
-## Appendix D - DID 7-Layer Model
+## Appendix D - DID 7-Layer Model [**^**](#table-of-contents)
 
 TODO
 
@@ -412,7 +412,7 @@ Figure D.1. DID 7-Layer Model
 
 TODO
 
-## Appendix E - DID Resolution: Path from a DID to a Real-life Something
+## Appendix E - DID Resolution: Path from a DID to a Real-life Something [**^**](#table-of-contents)
 
 *Draft document for discussion purposes*
 
