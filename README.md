@@ -9,8 +9,6 @@ Update cycle: As required – sometimes several times in a single day.
 
 ## Table of Contents
 
-<!-- TOC -->
-
 - [indy-arm - Hyperledger Indy/Sovrin/DID Comprehensive Architecture Reference Model (INDY ARM)](#indy-arm---hyperledger-indysovrindid-comprehensive-architecture-reference-model-indy-arm)
   - [Table of Contents](#table-of-contents)
   - [Overview **^**](#overview)
@@ -53,8 +51,6 @@ Update cycle: As required – sometimes several times in a single day.
       - [Narration](#narration-9)
       - [Additional Notes](#additional-notes)
     - [Questions](#questions)
-
-<!-- /TOC -->
 
 ## Overview [**^**](#table-of-contents)
 
@@ -156,7 +152,7 @@ The main or primary view is the All-in viewpoint. In addition, based on the need
 5. [DID Entity Viewpoint](./README.md#5-did-entity-viewpoint)
 6. [DID Subjects Viewpoint](./README.md#6-did-subjects-viewpoint)
 
-### 1. All-in Viewpoint [**^**](#indy-arm-viewpoints)
+### 1. All-in Viewpoint [**^**](#indy-arm-viewpoints-)
 
 The INDY ARM is illustrated in the following “All-in” viewpoint. The INDY ARM is an actual queryable model – it is not a drawing (e.g. a Visio or PowerPoint diagram).
 
@@ -264,7 +260,7 @@ Figure 1. Hyperledger Indy/Sovrin/DID Comprehensive Architecture Reference Model
 55. Indy Credential Registry Service Endpoint
 56. DID Resolver Service Endpoint
 
-### 2. DID Data Model and DID Document Data Model Viewpoint [**^**](#indy-arm-viewpoints)
+### 2. DID Data Model and DID Document Data Model Viewpoint [**^**](#indy-arm-viewpoints-)
 
 *Draft document for discussion purposes*
 
@@ -278,7 +274,7 @@ Figure 2. DID Data Model and DID Document Data Model Viewpoint
 
 See the cooresponding numbered elements in the [Narration](https://github.com/mwherman2000/indy-arm/blob/master/README.md#narration) section for the All-in viewpoint.
 
-### 3. DID Resolution Viewpoint [**^**](#indy-arm-viewpoints)
+### 3. DID Resolution Viewpoint [**^**](#indy-arm-viewpoints-)
 
 *Draft document for discussion purposes*
 
@@ -304,7 +300,7 @@ Figure 3b. DID Resolver Architecture
 
 See the cooresponding numbered elements in the [Narration](https://github.com/mwherman2000/indy-arm/blob/master/README.md#narration) section for the All-in viewpoint.
 
-### 4. Agent and Wallet Viewpoint [**^**](#indy-arm-viewpoints)
+### 4. Agent and Wallet Viewpoint [**^**](#indy-arm-viewpoints-)
 
 *Draft document for discussion purposes*
 
@@ -318,7 +314,7 @@ Figure 4. Agent and Wallet Viewpoint
 
 See the cooresponding numbered elements in the [Narration](https://github.com/mwherman2000/indy-arm/blob/master/README.md#narration) section for the All-in viewpoint.
 
-### 5. DID Entity Viewpoint [**^**](#indy-arm-viewpoints)
+### 5. DID Entity Viewpoint [**^**](#indy-arm-viewpoints-)
 
 *Draft document for discussion purposes*
 
@@ -328,7 +324,7 @@ The DID Entity vuewpoint is an example of an alternative (focused) viewpoint tha
 
 Figure 5. DID Entity (DID Subject) Viewpoint
 
-### 6. DID Subjects Viewpoint [**^**](#indy-arm-viewpoints)
+### 6. DID Subjects Viewpoint [**^**](#indy-arm-viewpoints-)
 
 *Draft document for discussion purposes*
 
