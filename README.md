@@ -506,7 +506,7 @@ TODO
 
 ![Indy Overlays Architecture Reference Model (OVERLAYS-ARM)](images/HBB-Overlays-ARM&#32;v0.1.png)
 
-Figure F.1.Indy Overlays Architecture Reference Model (OVERLAYS-ARM)
+Figure F.1. Indy Overlays Architecture Reference Model (OVERLAYS-ARM)
 
 #### Narration
 
