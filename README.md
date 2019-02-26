@@ -11,46 +11,48 @@ Update cycle: As required – sometimes several times in a single day.
 
 - [indy-arm - Hyperledger Indy/Sovrin/DID Comprehensive Architecture Reference Model (INDY ARM)](#indy-arm---hyperledger-indysovrindid-comprehensive-architecture-reference-model-indy-arm)
   - [Table of Contents](#table-of-contents)
-  - [Overview **^**](#overview-)
-  - [Goals **^**](#goals-)
-  - [Principles **^**](#principles-)
-  - [Drivers **^**](#drivers-)
-  - [Companion Articles **^**](#companion-articles-)
-  - [Tooling **^**](#tooling-)
-  - [INDY ARM **^**](#indy-arm-)
-    - [Architecture Perspectives **^**](#architecture-perspectives-)
-    - [Architecture Domains **^**](#architecture-domains-)
-    - [Recent Feedback and Changes **^**](#recent-feedback-and-changes-)
-  - [INDY ARM Viewpoints **^**](#indy-arm-viewpoints-)
-    - [1. All-in Viewpoint **^**](#1-all-in-viewpoint-)
-      - [Narration](#narration-)
-    - [2. DID Data Model and DID Document Data Model Viewpoint **^**](#2-did-data-model-and-did-document-data-model-viewpoint-)
-      - [Nararation](#nararation-)
-    - [3. DID Resolution Viewpoint **^**](#3-did-resolution-viewpoint-)
-      - [Narration](#narration-1-)
-    - [4. Agent and Wallet Viewpoint **^**](#4-agent-and-wallet-viewpoint-)
-      - [Narration](#narration-2-)
-    - [5. DID Entity Viewpoint **^**](#5-did-entity-viewpoint-)
-    - [6. DID Subjects Viewpoint **^**](#6-did-subjects-viewpoint-)
-      - [Narration](#narration-3-)
-  - [Appendix A - DID 6-Layer Model **^**](#appendix-a---did-6-layer-model-)
-    - [Steps, Documentation, and Precidents Viewpoint](#steps-documentation-and-precidents-viewpoint-)
-      - [Narration](#narration-4-)
-    - [Documentation Cross-reference Viewpoint](#documentation-cross-reference-viewpoint-)
-      - [Narration](#narration-5-)
-  - [Appendix B - Indy Agent Architecture Reference Model (INDY-AGENT-ARM-) **^**](#appendix-b---indy-agent-architecture-reference-model-indy-agent-arm-)
-    - [Location and Capabilities Viewpoint](#location-and-capabilities-viewpoint-)
-      - [Narration](#narration-6-)
-  - [Appendix C - Internet Naming Continuum **^**](#appendix-c---internet-naming-continuum-)
-      - [Narration](#narration-7-)
-  - [Appendix D - DID 7-Layer Model **^**](#appendix-d---did-7-layer-model-)
-      - [Narration](#narration-8-)
-  - [Appendix E - DID Resolution: Path from a DID to a Real-life Something **^**](#appendix-e---did-resolution-path-from-a-did-to-a-real-life-something-)
-    - [Companion Articles](#companion-articles-)
-    - [Path from a DID to a Real-life Something Viewpoint](#path-from-a-did-to-a-real-life-something-viewpoint-)
-      - [Narration](#narration-9-)
-      - [Additional Notes](#additional-notes-)
-    - [Questions](#questions-)
+  - [Overview **^**](#overview)
+  - [Goals **^**](#goals)
+  - [Principles **^**](#principles)
+  - [Drivers **^**](#drivers)
+  - [Companion Articles **^**](#companion-articles)
+  - [Tooling **^**](#tooling)
+  - [INDY ARM **^**](#indy-arm)
+    - [Architecture Perspectives **^**](#architecture-perspectives)
+    - [Architecture Domains **^**](#architecture-domains)
+    - [Recent Feedback and Changes **^**](#recent-feedback-and-changes)
+  - [INDY ARM Viewpoints **^**](#indy-arm-viewpoints)
+    - [1. All-in Viewpoint **^**](#1-all-in-viewpoint)
+      - [Narration](#narration)
+    - [2. DID Data Model and DID Document Data Model Viewpoint **^**](#2-did-data-model-and-did-document-data-model-viewpoint)
+      - [Nararation](#nararation)
+    - [3. DID Resolution Viewpoint **^**](#3-did-resolution-viewpoint)
+      - [Narration](#narration-1)
+    - [4. Agent and Wallet Viewpoint **^**](#4-agent-and-wallet-viewpoint)
+      - [Narration](#narration-2)
+    - [5. DID Entity Viewpoint **^**](#5-did-entity-viewpoint)
+    - [6. DID Subjects Viewpoint **^**](#6-did-subjects-viewpoint)
+      - [Narration](#narration-3)
+    - [7. DID Document Data Model - Business Layer Viewpoint **^**](#7-did-document-data-model---business-layer-viewpoint)
+      - [Narration](#narration-4)
+  - [Appendix A - DID 6-Layer Model **^**](#appendix-a---did-6-layer-model)
+    - [Steps, Documentation, and Precidents Viewpoint](#steps-documentation-and-precidents-viewpoint)
+      - [Narration](#narration-5)
+    - [Documentation Cross-reference Viewpoint](#documentation-cross-reference-viewpoint)
+      - [Narration](#narration-6)
+  - [Appendix B - Indy Agent Architecture Reference Model (INDY-AGENT-ARM) **^**](#appendix-b---indy-agent-architecture-reference-model-indy-agent-arm)
+    - [Location and Capabilities Viewpoint](#location-and-capabilities-viewpoint)
+      - [Narration](#narration-7)
+  - [Appendix C - Internet Naming Continuum **^**](#appendix-c---internet-naming-continuum)
+      - [Narration](#narration-8)
+  - [Appendix D - DID 7-Layer Model **^**](#appendix-d---did-7-layer-model)
+      - [Narration](#narration-9)
+  - [Appendix E - DID Resolution: Path from a DID to a Real-life Something **^**](#appendix-e---did-resolution-path-from-a-did-to-a-real-life-something)
+    - [Companion Articles](#companion-articles)
+    - [Path from a DID to a Real-life Something Viewpoint](#path-from-a-did-to-a-real-life-something-viewpoint)
+      - [Narration](#narration-10)
+      - [Additional Notes](#additional-notes)
+    - [Questions](#questions)
 
 ## Overview [**^**](#table-of-contents)
 
@@ -145,12 +147,13 @@ Vertically, the INDY ARM is divided into 3 architecture domains that span the 4 
 
 The main or primary view is the All-in viewpoint. In addition, based on the needs of various discussion forums (e.g. did-spec, did-resoltuon, Hyperledger Indy Rocketchat channels, etc.), a number of additional "alternative" or focused viewpoints have been created.
 
-1. [All-in Viewpoint](./README.md#1-all-in-viewpoint) (first time readers should focus here)
-2. [DID Data Model and DID Document Data Model Viewpoint](./README.md#2-did-data-model-and-did-document-data-model-viewpoint)
-3. [DID Resolution Viewpoint](./README.md#3-did-resolution-viewpoint)
-4. [Agent and Wallet Viewpiont](./README.md#4-agent-and-wallet-viewpoint)
-5. [DID Entity Viewpoint](./README.md#5-did-entity-viewpoint)
-6. [DID Subjects Viewpoint](./README.md#6-did-subjects-viewpoint)
+1. [All-in Viewpoint](#1-all-in-viewpoint-) (first time readers should focus here)
+2. [DID Data Model and DID Document Data Model Viewpoint](#2-did-data-model-and-did-document-data-model-viewpoint-)
+3. [DID Resolution Viewpoint](#3-did-resolution-viewpoint-)
+4. [Agent and Wallet Viewpiont](#4-agent-and-wallet-viewpoint-)
+5. [DID Entity Viewpoint](#5-did-entity-viewpoint-)
+6. [DID Subjects Viewpoint](#6-did-subjects-viewpoint-)
+7. [DID Document Data Model - Business Layer Viewpoint](#7-did-document-data-model-business-layer-viewpoint-)
 
 ### 1. All-in Viewpoint [**^**](#indy-arm-viewpoints-)
 
@@ -174,7 +177,7 @@ Figure 1. Hyperledger Indy/Sovrin/DID Comprehensive Architecture Reference Model
 5. An Inspector @ Baker may request that the Holder @ Baker present the SSI for the Purchase Order to him/her/it. The Inspector @ Baker receives the SSI from the Holder @ Baker.
 6. The Inspector @ Baker (or any Holder) can ask for the SSI for the Purchase Order to be verified by a Verifier.
 7. There is a set of Business Services (e.g, Issue, Store, Request, Verify, Register, etc.) that support the above processes. These Business Services are supported by services exposed by the Applications Architecture Layer (23).
-8. **Business Layer – DID Data Model** captures the key business-level model elements such as Actor (9), Things (10), and (Business) Processes (37).
+8. **Business Layer – DID  Document Data Model** captures the key business-level model elements such as Actor (9), Things (10), and (Business) Processes (37).
 9. An Actor is “a business entity that is capable of performing behavior.” [ARCHIMATE]
     - Examples of Actors include Persons, Organizations, and Software Agents.
     - An Actor can have a Controller (P7). A Controller of an Actor is an Actor (P7).
@@ -318,7 +321,7 @@ See the cooresponding numbered elements in the [Narration](https://github.com/mw
 
 *Draft document for discussion purposes*
 
-The DID Entity vuewpoint is an example of an alternative (focused) viewpoint that depicts the architectural elements that rrealize a DID Entity (DID SUbject).
+The DID Entity vuewpoint is an example of an alternative (focused) viewpoint that depicts the architectural elements that realize a DID Entity (DID SUbject).
 
 ![DID Entity (DID Subject) Viewpoint](images/HBB-Indy-Sovrin&#32;ARM&#32;v0.21-DID&#32;Entity.png)
 
@@ -328,11 +331,24 @@ Figure 5. DID Entity (DID Subject) Viewpoint
 
 *Draft document for discussion purposes*
 
-The DID Subjects viewpoint is an example of an alternative (focused) viewpoint that depicts the architectural elements that rrealize a DID Entity (DID SUbject).
+The DID Subjects viewpoint is an example of an alternative (focused) viewpoint that depicts the architectural elements that realize a DID Entity (DID SUbject).
 
-![ DID Subjects Viewpoint](images/HBB-Indy-Sovrin&#32;ARM&#32;v0.21-DID&#32;Subjects-Principles.png)
+![DID Subjects Viewpoint](images/HBB-Indy-Sovrin&#32;ARM&#32;v0.21-DID&#32;Subjects-Principles.png)
 
 Figure 6. DID Subjects Viewpoint
+
+#### Narration
+
+See the cooresponding numbered elements in the [Narration](https://github.com/mwherman2000/indy-arm/blob/master/README.md#narration) section for the All-in viewpoint.
+
+### 7. DID Document Data Model - Business Layer Viewpoint [**^**](#indy-arm-viewpoints-)
+
+*Draft document for discussion purposes*
+
+The DID Document Data Model - Business Layer viewpoint is an example of an alternative (focused) viewpoint that depicts the architectural elements that realize a DID Entity (DID SUbject).
+
+![DID Document Data Model - Business Layer Viewpoint](images/HBB-Indy-Sovrin&#32;ARM&#32;v0.23-DID&#32;Document&#32;Data&#32;Model-Business&#32;Layer.png)
+Figure 7. DID Document Data Model - Business Layer Viewpoint
 
 #### Narration
 
@@ -414,7 +430,7 @@ TODO
 
 ### Companion Articles
 - [What is a DID?](https://hyperonomy.com/2019/01/24/what-is-a-did/)
-- [INDY-ARM - DID Resolution Viewpoint](./README.md#3-did-resolution-viewpoint)
+- [INDY-ARM - DID Resolution Viewpoint](#3-did-resolution-viewpoint)
 
 ### Path from a DID to a Real-life Something Viewpoint
 
