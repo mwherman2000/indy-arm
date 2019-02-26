@@ -496,3 +496,16 @@ Figure E.1. DID Resolution: Path from a DID to a Real-life Something
 4. Is the extended data for an entity stored in the original DID Document (0) (based on the Extensibility feature of a DID Document) and can/does this feature explicitly rely on Schema?
     - TODO
 
+## Appendix F - Indy Overlays Architecture Reference Model (OVERLAYS-ARM) [**^**](#table-of-contents)
+
+TODO
+
+*Draft document for discussion purposes*
+
+![Indy Overlays Architecture Reference Model (OVERLAYS-ARM)](images/HBB-Overlays-ARM&#32;v0.1.png)
+
+Figure F.1.Indy Overlays Architecture Reference Model (OVERLAYS-ARM)
+
+#### Narration
+
+TODO
