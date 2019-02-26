@@ -502,6 +502,20 @@ Figure E.1. DID Resolution: Path from a DID to a Real-life Something
 
 TODO
 
+#### Principles
+
+1. Partition the set of Overlays into 3 layers
+    - Business layer (yellow) - overlays that directly support business processes and are meaningful to business people/analysts
+    - Application layer (blue) - overlays that directly support the design and implementation of applications (inckuding user experience)
+    - Technology layer (green) - overlays that directly support serialization, signing, sercuring, storing, and sending data (5S)
+2. The Technology layer supports the needs of the Application layer; the Application layer supports the needs of the Business layer
+3. Order the Overlay cards with a layer (color range) from bottom to top
+    - Higher cards build on top of or depend on lower cards
+4. Give a name of a particular stack of cards: an _Overlay Family_
+    - An Overlay Family is a named stack of Overlay cards
+    - An Overlay Family only needs to include the Overlay cards that are pertient to a particular application domain.
+
+
 *Draft document for discussion purposes*
 
 ![Indy Overlays Architecture Reference Model (OVERLAYS-ARM)](images/HBB-Overlays-ARM&#32;v0.1.png)
