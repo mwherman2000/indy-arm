@@ -398,9 +398,9 @@ To understand the INDY-AGENT ARM more fully, read the [INDY HIPE](https://github
 
 ### Location and Capabilities Viewpoint
 
-![Indy Agent Architecture Reference Model (INDY-AGENT-ARM)](images/HBB-SSI-Agents&#32;v0.8.png)
+![Indy Agent Architecture Reference Model (INDY-AGENT ARM)](images/HBB-SSI-Agents&#32;v0.8.png)
 
-Figure B.1. Indy Agent Architecture Reference Model (INDY-AGENT-ARM)
+Figure B.1. Indy Agent Architecture Reference Model (INDY-AGENT ARM)
 
 #### Narration
 
