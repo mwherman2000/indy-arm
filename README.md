@@ -518,10 +518,30 @@ TODO
 
 *Draft document for discussion purposes*
 
-![Indy Overlays Architecture Reference Model (OVERLAYS-ARM)](images/HBB-Overlays-ARM&#32;v0.1.png)
+![Indy Overlays Architecture Reference Model (OVERLAYS-ARM)](images/HBB-Overlays-ARM&#32;v0.2.png)
 
 Figure F.1. Indy Overlays Architecture Reference Model (OVERLAYS-ARM)
 
 #### Narration
 
-TODO
+The following 7 overlays have been defined for "Issuer” use [Paul Knowles]:
+
+- *Source Overlay* => to point to an external source of predefined Schema attribute definitions (e.g. HL7 FHIR, Schema 2.0, etc.);
+
+- *Encode Overlay* => to define character encoding (e.g. UTF-8, ISO-8859-1, Windows-1251, Base58Check, etc.);
+
+- *Entry Overlay* => to add predefined field values to Schema attributes;
+
+- *Label Overlay* => to add labels to Schema attributes (incl. category labels);
+
+- *Format Overlay* => to add formats (incl. field lengths) to Schema attributes;
+
+- *Conditional Overlay* => to add simple conditional programming within a Schema;
+
+- *Subset Overlay* => to create a Schema subset
+
+The only overlay defined for “Holder” use is ...
+
+- *Sensitive Overlay* => to enable a Holder to flag user-defined sensitive attributes
+
+[Note that the _Sensitive Overlay_ is the only one not linked to a specific _Schema Base_ but rather to a _Data Vault_ within the Holder's personal device.]
