@@ -392,7 +392,7 @@ TODO
 
 ## Appendix B - Indy Agent Architecture Reference Model (INDY-AGENT ARM) [**^**](#table-of-contents)
 
-The purpose of the following model is to visually organize and present a landscape of taxonomy of the different software components in the Agent ecosystem. The inspiration of INDY-AGENT architecture reference model is the agent categorization presented in the [INDY HIPE](https://github.com/hyperledger/indy-hipe/pulls) entitled [0002: Agents](https://github.com/hyperledger/indy-hipe/blob/31df09b3949021d790ebc364d7da1b9347821d87/text/0002-agents/README.md)
+The purpose of the following model is to visually organize and present a landscape or taxonomy depicting the different software components in the Agent ecosystem. The inspiration of INDY-AGENT architecture reference model is the agent categorization presented in the [INDY HIPE](https://github.com/hyperledger/indy-hipe/pulls) entitled [0002: Agents](https://github.com/hyperledger/indy-hipe/blob/31df09b3949021d790ebc364d7da1b9347821d87/text/0002-agents/README.md)
 
 To understand the INDY-AGENT ARM more fully, read the [INDY HIPE](https://github.com/hyperledger/indy-hipe/pulls) entitled [0002: Agents](https://github.com/hyperledger/indy-hipe/blob/31df09b3949021d790ebc364d7da1b9347821d87/text/0002-agents/README.md) written by Daniel Hardman.
 
