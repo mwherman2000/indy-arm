@@ -505,7 +505,7 @@ Figure E.1. DID Resolution: Path from a DID to a Real-life Something
     - Technology layer (green) - overlays that directly support serialization, signing, securing, character encoding, storing, and sending data (5S)
 2. The Technology layer supports the needs of the Application layer; the Application layer supports the needs of the Business layer
 3. Order the Overlay cards within a layer (color range) from bottom to top
-    - Higher cards build on top of or depend on lower cards
+    - Higher level cards build on top of or depend on lower level cards
 4. Give a name to the things is each layer: _Overlay cards_
 5. Give a name of a particular stack of Overlay cards: an _Overlay Family_
     - An Overlay Family is a _named_ stack of Overlay cards (_an Overlay card stack_ when refering to the _cards_ in the visual model)
