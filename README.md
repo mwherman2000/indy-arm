@@ -512,7 +512,7 @@ TODO
 2. The Technology layer supports the needs of the Application layer; the Application layer supports the needs of the Business layer
 3. Order the Overlay cards within a layer (color range) from bottom to top
     - Higher cards build on top of or depend on lower cards
-4. Give a name to the layer "things": _Overlay cards_
+4. Give a name to the things is each layer: _Overlay cards_
 5. Give a name of a particular stack of Overlay cards: an _Overlay Family_
     - An Overlay Family is a _named_ stack of Overlay cards (_an Overlay card stack_ when refering to the _cards_ in the visual model)
     - An Overlay Family only needs to include the Overlay cards that are pertient to a particular application domain.
