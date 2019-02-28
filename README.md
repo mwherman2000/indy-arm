@@ -279,7 +279,7 @@ Figure 2. DID Data Model and DID Document Data Model Viewpoint
 
 #### Nararation
 
-See the cooresponding numbered elements in the [Narration](https://github.com/mwherman2000/indy-arm/blob/master/README.md#narration) section for the All-in viewpoint.
+See the corresponding numbered elements in the [Narration](https://github.com/mwherman2000/indy-arm/blob/master/README.md#narration) section for the All-in viewpoint.
 
 ### 3. DID Resolution Viewpoint [**^**](#indy-arm-viewpoints-)
 
@@ -295,17 +295,13 @@ Figure 3a. DID Resolution Viewpoint
 
 TODO
 
-*Draft document for discussion purposes*
-
-TODO
-
 ![INDY ARM: DID Resolver Architecture](images/HBB-DID-Resolver-Architecture&#32;v0.2.png)
 
-Figure 3b. DID Resolver Architecture 
+Figure 3b. DID Resolver Architecture
 
 #### Narration
 
-See the cooresponding numbered elements in the [Narration](https://github.com/mwherman2000/indy-arm/blob/master/README.md#narration) section for the All-in viewpoint.
+See the corresponding numbered elements in the [Narration](https://github.com/mwherman2000/indy-arm/blob/master/README.md#narration) section for the All-in viewpoint.
 
 ### 4. Agent and Wallet Viewpoint [**^**](#indy-arm-viewpoints-)
 
@@ -319,7 +315,7 @@ Figure 4. Agent and Wallet Viewpoint
 
 #### Narration
 
-See the cooresponding numbered elements in the [Narration](https://github.com/mwherman2000/indy-arm/blob/master/README.md#narration) section for the All-in viewpoint.
+See the corresponding numbered elements in the [Narration](https://github.com/mwherman2000/indy-arm/blob/master/README.md#narration) section for the All-in viewpoint.
 
 ### 5. DID Entity Viewpoint [**^**](#indy-arm-viewpoints-)
 
@@ -333,7 +329,7 @@ Figure 5. DID Entity (DID Subject) Viewpoint
 
 #### Narration
 
-See the cooresponding numbered elements in the [Narration](https://github.com/mwherman2000/indy-arm/blob/master/README.md#narration) section for the All-in viewpoint.
+See the corresponding numbered elements in the [Narration](https://github.com/mwherman2000/indy-arm/blob/master/README.md#narration) section for the All-in viewpoint.
 
 ### 6. DID Subjects Viewpoint [**^**](#indy-arm-viewpoints-)
 
@@ -347,7 +343,7 @@ Figure 6. DID Subjects Viewpoint
 
 #### Narration
 
-See the cooresponding numbered elements in the [Narration](https://github.com/mwherman2000/indy-arm/blob/master/README.md#narration) section for the All-in viewpoint.
+See the corresponding numbered elements in the [Narration](https://github.com/mwherman2000/indy-arm/blob/master/README.md#narration) section for the All-in viewpoint.
 
 ### 7. DID Document Data Model - Business Layer Viewpoint [**^**](#indy-arm-viewpoints-)
 
@@ -360,13 +356,13 @@ Figure 7. DID Document Data Model - Business Layer Viewpoint
 
 #### Narration
 
-See the cooresponding numbered elements in the [Narration](https://github.com/mwherman2000/indy-arm/blob/master/README.md#narration) section for the All-in viewpoint.
+See the corresponding numbered elements in the [Narration](https://github.com/mwherman2000/indy-arm/blob/master/README.md#narration) section for the All-in viewpoint.
 
 ## Appendix A - DID 6-Layer Model [**^**](#table-of-contents)
 
 TODO
 
-### Steps, Documentation, and Precidents Viewpoint 
+### Steps, Documentation, and Precidents Viewpoint [**^**](#table-of-contents)
 
 *Draft document for discussion purposes*
 
@@ -378,7 +374,7 @@ Figure A.1. DID 6-Layer Model: Steps, Documentation, and Precidents Viewpoint
 
 TODO
 
-### Documentation Cross-reference Viewpoint
+### Documentation Cross-reference Viewpoint [**^**](#table-of-contents)
 
 *Draft document for discussion purposes*
 
@@ -394,7 +390,7 @@ TODO
 
 The purpose of the following model is to visually organize and present a landscape or taxonomy depicting the different software components in the Agent ecosystem. The inspiration of INDY-AGENT architecture reference model is the agent categorization presented in the [INDY HIPE](https://github.com/hyperledger/indy-hipe/pulls) entitled [0002: Agents](https://github.com/hyperledger/indy-hipe/blob/31df09b3949021d790ebc364d7da1b9347821d87/text/0002-agents/README.md)
 
-### Location and Capabilities Viewpoint
+### Location and Capabilities Viewpoint [**^**](#table-of-contents)
 
 ![Indy Agent Architecture Reference Model (INDY-AGENT ARM)](images/HBB-SSI-Agents&#32;v0.8.png)
 
@@ -405,8 +401,6 @@ Figure B.1. Indy Agent Architecture Reference Model (INDY-AGENT ARM)
 To understand the INDY-AGENTARM more fully, read the [INDY HIPE](https://github.com/hyperledger/indy-hipe/pulls) entitled [0002: Agents](https://github.com/hyperledger/indy-hipe/blob/31df09b3949021d790ebc364d7da1b9347821d87/text/0002-agents/README.md) written by Daniel Hardman.
 
 ## Appendix C - Internet Naming Continuum [**^**](#table-of-contents)
-
-TODO
 
 *Draft document for discussion purposes*
 
@@ -420,9 +414,9 @@ TODO
 
 ## Appendix D - DID 7-Layer Model [**^**](#table-of-contents)
 
-TODO
-
 *Draft document for discussion purposes*
+
+TODO
 
 ![DID 7-Layer Model](images/DID-7-Layer-Steps.png)
 
@@ -497,13 +491,13 @@ Figure E.1. DID Resolution: Path from a DID to a Real-life Something
 3. Is there a third repository (Schema Document Repository) that needs to be added to the graphic? …or is schema stored as “just another” DID Document in the DID Document Repository?  If so, in the most likely scenario, is there a separate DID Document Repository that acts as a global Schema Document Repository. Are Schema Documents resolved through the same DID Resolver (2)?
    - Daniel Hardman (2019-01-07): Schemas for credentials are stored on the ledger – not in DID Documents, but in separate SCHEMA transactions. A schema lookup is a ledger lookup, but not a DID Document lookup. Schemas are not indexed by DID, since they do not require an endpoint or key rotation construct–but rather by an identifier that helps the ledger walk its own state trie with maximum efficiency
 4. Is the extended data for an entity stored in the original DID Document (0) (based on the Extensibility feature of a DID Document) and can/does this feature explicitly rely on Schema?
-    - TODO
+    - Additional data added through the Extensibility feature needs to have its own @context.
 
 ## Appendix F - Indy Overlays Architecture Reference Model (OVERLAYS ARM) [**^**](#table-of-contents)
 
-TODO
+*Draft document for discussion purposes*
 
-#### Principles
+### Principles
 
 1. Partition the set of Overlay cards into 3 layers
     - Business layer (yellow) - overlays that directly support business processes and are meaningful to business people/analysts
@@ -517,13 +511,11 @@ TODO
     - An Overlay Family is a _named_ stack of Overlay cards (_an Overlay card stack_ when refering to the _cards_ in the visual model)
     - An Overlay Family only needs to include the Overlay cards that are pertient to a particular application domain.
 
-*Draft document for discussion purposes*
-
 ![Indy Overlays Architecture Reference Model (OVERLAYS ARM)](images/HBB-Overlays-ARM&#32;v0.2.png)
 
 Figure F.1. Indy Overlays Architecture Reference Model (OVERLAYS ARM)
 
-#### Narration
+### Narration
 
 The following 7 overlays have been defined for "Issuer” use [Paul Knowles]:
 - *Source Overlay* => to point to an external source of predefined Schema attribute definitions (e.g. HL7 FHIR, Schema 2.0, etc.)
