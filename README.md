@@ -41,7 +41,7 @@ Update cycle: As required – sometimes several times in a single day.
       - [Narration](#narration-6)
     - [Documentation Cross-reference Viewpoint](#documentation-cross-reference-viewpoint-)
       - [Narration](#narration-7)
-  - [Appendix B - Indy Agent Architecture Reference Model (INDY-AGENT-ARM) **^**](#appendix-b---indy-agent-architecture-reference-model-indy-agent-arm-)
+  - [Appendix B - Indy Agent Architecture Reference Model (INDY-AGENT ARM) **^**](#appendix-b---indy-agent-architecture-reference-model-indy-agent-arm-)
     - [Location and Capabilities Viewpoint](#location-and-capabilities-viewpoint-)
       - [Narration](#narration-8)
   - [Appendix C - Internet Naming Continuum **^**](#appendix-c---internet-naming-continuum-)
@@ -54,7 +54,7 @@ Update cycle: As required – sometimes several times in a single day.
       - [Narration](#narration-11)
       - [Additional Notes](#additional-notes)
     - [Questions](#questions)
-  - [Appendix F - Indy Overlays Architecture Reference Model (OVERLAYS-ARM) **^**](#appendix-f---indy-overlays-architecture-reference-model-overlays-arm-)
+  - [Appendix F - Indy Overlays Architecture Reference Model (OVERLAYS ARM) **^**](#appendix-f---indy-overlays-architecture-reference-model-overlays-arm-)
       - [Principles](#principles)
       - [Narration](#narration-12)
 
@@ -438,7 +438,7 @@ TODO
 
 ### Companion Articles [**^**](#table-of-contents)
 - [What is a DID?](https://hyperonomy.com/2019/01/24/what-is-a-did/)
-- [INDY-ARM - DID Resolution Viewpoint](#3-did-resolution-viewpoint)
+- [INDY ARM - DID Resolution Viewpoint](#3-did-resolution-viewpoint)
 
 ### Path from a DID to a Real-life Something Viewpoint [**^**](#table-of-contents)
 
@@ -499,28 +499,29 @@ Figure E.1. DID Resolution: Path from a DID to a Real-life Something
 4. Is the extended data for an entity stored in the original DID Document (0) (based on the Extensibility feature of a DID Document) and can/does this feature explicitly rely on Schema?
     - TODO
 
-## Appendix F - Indy Overlays Architecture Reference Model (OVERLAYS-ARM) [**^**](#table-of-contents)
+## Appendix F - Indy Overlays Architecture Reference Model (OVERLAYS ARM) [**^**](#table-of-contents)
 
 TODO
 
 #### Principles
 
-1. Partition the set of Overlays into 3 layers
+1. Partition the set of Overlay cards into 3 layers
     - Business layer (yellow) - overlays that directly support business processes and are meaningful to business people/analysts
     - Application layer (blue) - overlays that directly support the design and implementation of applications (including user experience)
     - Technology layer (green) - overlays that directly support serialization, signing, sercuring, storing, and sending data (5S)
 2. The Technology layer supports the needs of the Application layer; the Application layer supports the needs of the Business layer
 3. Order the Overlay cards within a layer (color range) from bottom to top
     - Higher cards build on top of or depend on lower cards
-4. Give a name of a particular stack of Overlay cards: an _Overlay Family_
-    - An Overlay Family is a _named_ stack of Overlay cards
+4. Give a name to the layer "things": _Overlay cards_
+5. Give a name of a particular stack of Overlay cards: an _Overlay Family_
+    - An Overlay Family is a _named_ stack of Overlay cards (_an Overlay card stack_ when refering to the _cards_ in the visual model)
     - An Overlay Family only needs to include the Overlay cards that are pertient to a particular application domain.
 
 *Draft document for discussion purposes*
 
-![Indy Overlays Architecture Reference Model (OVERLAYS-ARM)](images/HBB-Overlays-ARM&#32;v0.2.png)
+![Indy Overlays Architecture Reference Model (OVERLAYS ARM)](images/HBB-Overlays-ARM&#32;v0.2.png)
 
-Figure F.1. Indy Overlays Architecture Reference Model (OVERLAYS-ARM)
+Figure F.1. Indy Overlays Architecture Reference Model (OVERLAYS ARM)
 
 #### Narration
 
