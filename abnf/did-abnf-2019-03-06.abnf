@@ -1,0 +1,20 @@
+; https://github.com/WebOfTrustInfo/rwot8-barcelona/blob/master/draft-documents/understanding-dids-in-greater-depth.md#appendix-a-anbf-for-dids-and-did-urls
+
+; !syntax("abnf")
+did                       = "did:" method ":" method-specific-idstring
+method                    = 1*methodchar
+methodchar                = %x61-7A / DIGIT
+method-specific-idstring  = idstring *( ":" idstring )
+idstring                  = 1*idchar
+idchar                    = ALPHA / DIGIT / "." / "-"
+did-url                   = did [ did-relative-ref ]
+did-relative-ref          = did-fragment-ref / did-content-ref / did-service-ref
+did-fragment-ref          = "#" fragment
+did-content-ref           = "!" content-id                                                  
+content-id                = content-idstring *( ":" content-idstring )                      
+content-idstring          = 1*uri-safe-char                                                 
+uri-safe-char             = idchar / "_" / pct-encoded
+did-service-ref           = "$" service-id [ path-abempty ] [ "?" query ] [ "#" fragment ]
+service-id                = service-idstring *( ":" service-idstring )
+service-idstring          = 1*uri-safe-char
+did-reference             = did-url / did-relative-ref
