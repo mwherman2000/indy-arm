@@ -511,9 +511,13 @@ Figure E.1. DID Resolution: Path from a DID to a Real-life Something
     - An Overlay Family is a _named_ stack of Overlay cards (_an Overlay card stack_ when refering to the _cards_ in the visual model)
     - An Overlay Family only needs to include the Overlay cards that are pertient to a particular application domain.
 
-![Indy Overlays Architecture Reference Model (OVERLAYS ARM)](images/HBB-Overlays-ARM&#32;v0.2.png)
+![Indy Overlays Architecture Reference Model (OVERLAYS ARM) - Overlay Card Stack](images/HBB-Overlays-ARM&#32;v0.2.png)
 
-Figure F.1. Indy Overlays Architecture Reference Model (OVERLAYS ARM)
+Figure F.1. Indy Overlays Architecture Reference Model (OVERLAYS ARM): Overlay Family (Card Stack)
+
+![Indy Overlays Architecture Reference Model (OVERLAYS ARM) - Schema Family](images/HBB-Overlays-ARM&#32;v0.2-Schema-Family.png)
+
+Figure F.2. Indy Overlays Architecture Reference Model (OVERLAYS ARM): Schema Family
 
 ### Narration
 
