@@ -5,7 +5,7 @@ _Draft document for discussion purposes_
 - Hyperonomy Business Blockchain Project / Parallelspace Corporation
 - January 2019
 
-Update cycle: As required – sometimes several times in a single day.
+Update cycle: As required - sometimes several times in a single day.
 
 ## Table of Contents
 
