@@ -158,6 +158,7 @@ The main or primary view is the All-in viewpoint. In addition, based on the need
 5. [DID Entity Viewpoint](#5-did-entity-viewpoint-)
 6. [DID Subjects Viewpoint](#6-did-subjects-viewpoint-)
 7. [DID Document Data Model - Business Layer Viewpoint](#7-did-document-data-model---business-layer-viewpoint-)
+8. [Ledger Viewpoint](#8-ledger-vewpoint-)
 
 ### 1. All-in Viewpoint [**^**](#indy-arm-viewpoints-)
 
@@ -353,6 +354,19 @@ The DID Document Data Model - Business Layer viewpoint is an example of an alter
 
 ![DID Document Data Model - Business Layer Viewpoint](images/HBB-Indy-Sovrin&#32;ARM&#32;v0.23-DID&#32;Document&#32;Data&#32;Model-Business&#32;Layer.png)
 Figure 7. DID Document Data Model - Business Layer Viewpoint
+
+#### Narration
+
+See the corresponding numbered elements in the [Narration](https://github.com/mwherman2000/indy-arm/blob/master/README.md#narration) section for the All-in viewpoint.
+
+### 8. Ledger Viewpoint [**^**](#indy-arm-viewpoints-)
+
+*Draft document for discussion purposes*
+
+NOTE: References to "ledger" need to be updated to read "Verifiable Data Registry (VD)".
+
+![INDY ARM: Ledger Viewpoint](images/HBB-Indy-Sovrin&#32;ARM&#32;v0.23-Ledger.png)
+Figure 8. Ledger Viewpoint
 
 #### Narration
 
