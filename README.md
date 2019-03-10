@@ -158,7 +158,7 @@ The main or primary view is the All-in viewpoint. In addition, based on the need
 5. [DID Entity Viewpoint](#5-did-entity-viewpoint-)
 6. [DID Subjects Viewpoint](#6-did-subjects-viewpoint-)
 7. [DID Document Data Model - Business Layer Viewpoint](#7-did-document-data-model---business-layer-viewpoint-)
-8. [Ledger Viewpoint](#8-ledger-vewpoint-)
+8. [Ledger Viewpoint](#8-ledger-viewpoint-)
 
 ### 1. All-in Viewpoint [**^**](#indy-arm-viewpoints-)
 
