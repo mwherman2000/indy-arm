@@ -13,6 +13,8 @@ Click here: [Indy ARM Interactive Explorer](https://mwherman2000.github.io/indy-
 
 [![Indy ARM Interactive Explorer](images/indy-arm-explorer.png)](https://mwherman2000.github.io/indy-arm/)
 
+NOTE: The above Indy ARM Interactive Explorer is completely separate (for now) from the [Sovrin Governance Framework ARM Interactive Explorer](https://github.com/mwherman2000/sovrin-arm/blob/master/README.md#sovrin-arm---sovrin-governance-framework-comprehensive-architecture-reference-model-sovrin-arm).
+
 ## Table of Contents
 
 - [indy-arm - Hyperledger Indy/Sovrin/DID Comprehensive Architecture Reference Model (INDY ARM)](#indy-arm---hyperledger-indysovrindid-comprehensive-architecture-reference-model-indy-arm)
