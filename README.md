@@ -48,9 +48,9 @@ Update cycle: As required - sometimes several times in a single day.
       - [Narration](#narration-9)
   - [Appendix D - DID 7-Layer Model **^**](#appendix-d---did-7-layer-model-)
       - [Narration](#narration-10)
-  - [Appendix E - DID Resolution: Path from a DID to a Real-life Something **^**](#appendix-e---did-resolution-path-from-a-did-to-a-real-life-something-)
+  - [Appendix E - DID Resolution: Path from a DID to a Real-life Subject **^**](#appendix-e---did-resolution-path-from-a-did-to-a-real-life-something-)
     - [Companion Articles](#companion-articles-)
-    - [Path from a DID to a Real-life Something Viewpoint](#path-from-a-did-to-a-real-life-something-viewpoint-)
+    - [Path from a DID to a Real-life Subject Viewpoint](#path-from-a-did-to-a-real-life-something-viewpoint-)
       - [Narration](#narration-11)
       - [Additional Notes](#additional-notes)
     - [Questions](#questions)
@@ -176,8 +176,8 @@ Figure 1. Hyperledger Indy/Sovrin/DID Comprehensive Architecture Reference Model
 
 1. **Business Layer (“Edge” Layer) of the INDY ARM.** “The Business Layer depicts business services offered to customers, which are realized in the organization by business processes performed by business actors.” [ARCHIMATE]
     - The following Actor Roles are depicted in this version of the ARM: Issuer, Holder (x 2), Inspector, and Verifier. These roles are not formally defined in the draft DID specification; for the time being, they have been borrowed from the documentation related to the Verified Credentials project.
-2. An Issuer issues a self-sovereign identity (SSI) for a Something; e.g. a Birth Certificate or a Purchase Order (3). In this example, the SSI is for a Thing (10); in particular, a completed and approved Purchase Order (3) (or Birth Certificate). The Purchase Order is issued to a Holder. Both the Issuer and the Holder work for a fictitious company called Acme Corporation.
-3. SSI for a Something (e.g. Birth Certificate, Purchase Order) issued by the Issuer @ Acme (2).
+2. An Issuer issues a self-sovereign identity (SSI) for a Subject; e.g. a Birth Certificate or a Purchase Order (3). In this example, the SSI is for a Thing (10); in particular, a completed and approved Purchase Order (3) (or Birth Certificate). The Purchase Order is issued to a Holder. Both the Issuer and the Holder work for a fictitious company called Acme Corporation.
+3. SSI for a Subject (e.g. Birth Certificate, Purchase Order) issued by the Issuer @ Acme (2).
 4. The Holder @ Acme accepts the SSI for the Thing (a Purchase Order) from the Issuer (2). In turn, the Holder @ Acme presents the SSI for the Purchase Order to a Holder at Baker Limited. The Holder @ Baker receives the SSI for the Purchase Order from the Holder @ Acme (4).
 5. An Inspector @ Baker may request that the Holder @ Baker present the SSI for the Purchase Order to him/her/it. The Inspector @ Baker receives the SSI from the Holder @ Baker.
 6. The Inspector @ Baker (or any Holder) can ask for the SSI for the Purchase Order to be verified by a Verifier.
@@ -440,7 +440,7 @@ Figure D.1. DID 7-Layer Model
 
 TODO
 
-## Appendix E - DID Resolution: Path from a DID to a Real-life Something [**^**](#table-of-contents)
+## Appendix E - DID Resolution: Path from a DID to a Real-life Subject [**^**](#table-of-contents)
 
 *Draft document for discussion purposes*
 
@@ -448,45 +448,45 @@ TODO
 - [What is a DID?](https://hyperonomy.com/2019/01/24/what-is-a-did/)
 - [INDY ARM - DID Resolution Viewpoint](#3-did-resolution-viewpoint)
 
-### Path from a DID to a Real-life Something Viewpoint [**^**](#table-of-contents)
+### Path from a DID to a Real-life Subject Viewpoint [**^**](#table-of-contents)
 
 The following graphic illustrates the path (flow) of a client app trying to: 
 a) communicate/interact with, and/or 
-b) access the metadata about a real-life something by using a Decentralized Identifier (id (DID)).
+b) access the metadata about a real-life subject by using a Decentralized Identifier (id (DID)).
 
-That is, in (almost) 10 steps or less, how to you get from an id (DID) attribute on the left to a Real-Life Something on the right?
+That is, in (almost) 10 steps or less, how to you get from an id (DID) attribute on the left to a Real-Life Subject on the right?
 
 2019-01-08 NOTE: The ultimate goal is to synthesize a simple(r) data model – not a more complex one. However, the interim analysis phase (tearing things apart) is expectedly going to result in a data model that is visually more complex. From this analysis model, we can hopefully synthesize a data model that is simple(r).
 
 NOTE: Click on the graphic to enlarge it.
 
-![DID Resolution - Path from a DID to a Real-life Something](images/DID%20to%20Real-life%20Something%20v0.4.png)
+![DID Resolution - Path from a DID to a Real-life Subject](images/DID%20to%20Real-life%20Something%20v0.4.png)
 
-Figure E.1. DID Resolution: Path from a DID to a Real-life Something
+Figure E.1. DID Resolution: Path from a DID to a Real-life Subject
 
 #### Narration
 
 0. A DID Document contains an id (DID) attribute which is the unique identifier or key for a DID Document.
-    - A Real-Life Something can be associated with more than one DID Document (and by implication, more than one id (DID)).
-    - A DID Document (and its id (DID)) can only refer to one Real-Life Something.
+    - A Real-Life Subject can be associated with more than one DID Document (and by implication, more than one id (DID)).
+    - A DID Document (and its id (DID)) can only refer to one Real-Life Subject.
 1.	Client App (or Service) is interested in either:
-    - Communicating or interacting with a Real-Life Something.
-    - Gaining knowledge about a Real-Life Something. (Let’s refer this knowledge as Metadata about the Real-Life Something.)
-    - NOTE: A Real-Life Something can be either a Real-Life Actor or a Real-Life Thing.
+    - Communicating or interacting with a Real-Life Subject.
+    - Gaining knowledge about a Real-Life Subject. (Let’s refer this knowledge as Metadata about the Real-Life Subject.)
+    - NOTE: A Real-Life Subject can be either a Real-Life Actor or a Real-Life Thing.
 2.	Client App calls DID Resolver to retrieve the DID Document that corresponds to a particular id (DID).
 3.	DID Resolver uses the id (DID) as a key (unique identifier) to retrieve the corresponding DID Document from a DID Document Repository (14).
 4.	DID Resolver, in turn, returns the DID Document to the Client App.
 5.	The DID Document contains a service (endpoint) attribute that points to the Software Service Endpoint for the entity where:
-    - Client App can communicate or interact with a particular Virtual (Real-Life) Something (primary use case).
-    - Client App can retrieve additional information about a particular Real-Life Something (aka Metadata about the Virtual (Real-Life) Something) (secondary use case and, potentially, a sub-case of the primary use case).
-6.	Client App calls Software Service Endpoint to either: a) communicate/interact with, or (b) retrieve metadata about a Virtual (Real-Life) Something.
-7.	[Primary Use Case] Software Service Endpoint enables Client App to communicate or interact with a particular Virtual (Real-Life) Something.
-8.	Virtual Actor is a Virtual (Real-Life) Something that is associated with a Real-Life Actor (9).
-9.	Real-Life Actor is a Real-Life Something that is associated with a Virtual (Real-Life) Actor (8).
-10.	Virtual Thing is a Virtual (Real-Life) Something that is associated with a Real-Life Thing (11). A Virtual Thing has an Owner. The Owner of a Virtual Thing is a Virtual Actor.
-11.	Real-Life Thing is a Real-Life Something that is associated with a Virtual (Real-Life) Thing (10). A Real-Life Thing has an Owner. The Owner of a Real-Life Thing is a Real-Life Actor.
-12.	[Secondary Use Case] Client App retrieves Metadata Document about Virtual (Real-Life) Something from the Metadata Document Repository (15) by calling Software Service Endpoint. As in the primary use case, the Virtual (Real-Life) Something can be a Virtual Actor or a Virtual Thing.
-13.	Software Service Endpoint returns the Metadata Document for the particular Virtual (Real-Life) Something to the Client App; that is, the knowledge about the Virtual (Real-Life) Something that the Client App was originally interested in Step 1.
+    - Client App can communicate or interact with a particular Virtual (Real-Life) Subject (primary use case).
+    - Client App can retrieve additional information about a particular Real-Life Subject (aka Metadata about the Virtual (Real-Life) Subject) (secondary use case and, potentially, a sub-case of the primary use case).
+6.	Client App calls Software Service Endpoint to either: a) communicate/interact with, or (b) retrieve metadata about a Virtual (Real-Life) Subject.
+7.	[Primary Use Case] Software Service Endpoint enables Client App to communicate or interact with a particular Virtual (Real-Life) Subject.
+8.	Virtual Actor is a Virtual (Real-Life) Subject that is associated with a Real-Life Actor (9).
+9.	Real-Life Actor is a Real-Life Subject that is associated with a Virtual (Real-Life) Actor (8).
+10.	Virtual Thing is a Virtual (Real-Life) Subject that is associated with a Real-Life Thing (11). A Virtual Thing has an Owner. The Owner of a Virtual Thing is a Virtual Actor.
+11.	Real-Life Thing is a Real-Life Subject that is associated with a Virtual (Real-Life) Thing (10). A Real-Life Thing has an Owner. The Owner of a Real-Life Thing is a Real-Life Actor.
+12.	[Secondary Use Case] Client App retrieves Metadata Document about Virtual (Real-Life) Subject from the Metadata Document Repository (15) by calling Software Service Endpoint. As in the primary use case, the Virtual (Real-Life) Subject can be a Virtual Actor or a Virtual Thing.
+13.	Software Service Endpoint returns the Metadata Document for the particular Virtual (Real-Life) Subject to the Client App; that is, the knowledge about the Virtual (Real-Life) Subject that the Client App was originally interested in Step 1.
 14.	DID Document Repository is a repository of DID Documents indexed by each document’s id (DID).
 15.	Metadata Document Repository is a repository of Metadata Documents.
 
