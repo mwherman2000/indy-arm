@@ -246,7 +246,7 @@ Figure 1. Hyperledger Indy/Sovrin/DID Comprehensive Architecture Reference Model
 33. Cloud Agent App 2 is an example of another Cloud Agent App in the ecosystem. Communication between Cloud Agent Apps takes place using the Indy Agent-to-Agent Protocol (A2A Protocol) (34).
 34. The Indy Agent-to-Agent Protocol (A2A Protocol) is the protocol used for communication between Edge Agent Apps (24) and (26) and Cloud Agent Nodes (31) and (33).
 35. Ledger Agent Nodes support the requirements of Edge Agent (24) and Cloud Agent (31) applications for persisting, managing, and interacting with DID Documents (16) persisted to the VDR (36) and (17).
-36.Verifiable Data Registry (VDR) (replica) is the distributed ledger technology that supports the persistence, management of DID Documents (16) persisted to the ledger as Indy NYM and ATTRIB transactions (17).
+36. Verifiable Data Registry (VDR) (replica) is the distributed ledger technology that supports the persistence, management of DID Documents (16) persisted to the ledger as Indy NYM and ATTRIB transactions (17).
 37. Ledger Agent Node 2 is an example of another Ledge Agent Node in the ecosystem. Communication between Ledge Agent Nodes takes place using the Indy Ledger-to-Ledger Protocol (39).
 38. Verifiable Data Registry (VDR) (replica) is the distributed ledger technology that supports the persistence, management of DID Documents (16) persisted to the ledger as Indy NYM and ATTRIB transactions (17).
 39. The Indy Ledger-to-Ledger Protocol is the protocol used for communication between Ledger Nodes (35) and (37).
