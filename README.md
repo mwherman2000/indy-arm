@@ -7,13 +7,13 @@ _Draft document for discussion purposes_
 
 Update cycle: As required - sometimes several times in a single day.
 
-## Indy ARM Interactive Explorer
+## INDY ARM Interactive Explorer
 
-Click here: [Indy ARM Interactive Explorer](https://mwherman2000.github.io/indy-arm/)
+Click here: [INDY ARM Interactive Explorer](https://mwherman2000.github.io/indy-arm/)
 
-[![Indy ARM Interactive Explorer](images/indy-arm-explorer.png)](https://mwherman2000.github.io/indy-arm/)
+[![INDY ARM Interactive Explorer](images/indy-arm-explorer.png)](https://mwherman2000.github.io/indy-arm/)
 
-NOTE: The above Indy ARM Interactive Explorer is completely separate (for now) from the [Sovrin Governance Framework ARM Interactive Explorer](https://github.com/mwherman2000/sovrin-arm/blob/master/README.md#sovrin-arm---sovrin-governance-framework-comprehensive-architecture-reference-model-sovrin-arm).
+NOTE: The above INDY ARM Interactive Explorer is completely separate (for now) from the [Sovrin Governance Framework ARM Interactive Explorer](https://github.com/mwherman2000/sovrin-arm/blob/master/README.md#sovrin-arm---sovrin-governance-framework-comprehensive-architecture-reference-model-sovrin-arm).
 
 ## Table of Contents
 
