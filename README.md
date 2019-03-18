@@ -140,7 +140,7 @@ Vertically, the INDY ARM is divided into 3 architecture domains that span the 4 
 15. Indy Transactions changed to Indy Transactions (Journal) (17).
 16. Removed DID Resolver Full Node (@peacemaker).
 17. Four perspectives added to the both of the ARM.
-18. Indy Ledger Local Node State (Replica) was changed to Local Ledger State (Replica).
+18. Indy Ledger Local Node State (Replica) was changed toVerifiable Data Registry (VDR) (replica).
 19. Partitioned the DID Data Model (old 12) perspective into DID Document Data Model (44) and DID Data Model (new 12) perspectives.
 20. Added elements (44) to (50) to support change 19.
 21. Renamed "Service" elements to "Service Endpoint" where appropriate (51) through (56)
@@ -217,7 +217,7 @@ Figure 1. Hyperledger Indy/Sovrin/DID Comprehensive Architecture Reference Model
     - The id (DID) attribute (13) is the unique identifier or key for the DID Document.
     - The id (DID) attribute is given the nickname “DID” (aka Decentralized Identifier) for convenience; but more importantly, to clarify what a DID specifically refers to (as well as to clarify what the term DID specifically does not refer to). “DID” should only be used to refer to the id (DID) attribute of a DID Entity (14) (or DID Document).
     - id (DID) are used to index, find, and retrieve DID Documents from the Technology Layer (30). id (DID) exists as an attribute of a DID Entity (14) (and by implication, as an attribute of DID Document, the JSON-LD serialization of the corresponding DID Entity).
-17. When DID Documents (16), in turn, are serialized to the Local Ledger State (36) and (38) by the Indy Ledger Nodes (35) and (37), they are stored as a series of Indy Ledger Transactions. Edge Agents and Cloud Agents call an Indy Ledger Node to persist a DID Document to the Indy Ledger. DID Documents, specifically, are written to the Indy Ledger by the Indy Ledger Nodes using:
+17. When DID Documents (16), in turn, are serialized to the Verifiable Data Registry (VDR) (replica) (36) and (38) by the Indy Ledger Nodes (35) and (37), they are stored as a series of Indy VDR Transactions. Edge Agents and Cloud Agents call an VDR Node to persist a DID Document to the VDR. DID Documents, specifically, are written to the VDR by the Indy Ledger Nodes using:
     - Indy NYM transactions (50), and
     - Indy ATTRIB transactions.
 18. **Technology Layer – Projects and Distributions** highlights the Hyperledger (and potentially other) open source projects that design, build, and supply software components to both the Applications and Technology Layers.
@@ -245,14 +245,14 @@ Figure 1. Hyperledger Indy/Sovrin/DID Comprehensive Architecture Reference Model
 32. The Cloud Wallet is a cloud or server-based technology component that supports the Cloud Agent App’s requirements (31) for managing actual self-sovereign identities it owns.
 33. Cloud Agent App 2 is an example of another Cloud Agent App in the ecosystem. Communication between Cloud Agent Apps takes place using the Indy Agent-to-Agent Protocol (A2A Protocol) (34).
 34. The Indy Agent-to-Agent Protocol (A2A Protocol) is the protocol used for communication between Edge Agent Apps (24) and (26) and Cloud Agent Nodes (31) and (33).
-35. Ledge Agent Nodes support the requirements of Edge Agent (24) and Cloud Agent (31) applications for persisting, managing, and interacting with DID Documents (16) persisted to the Indy Ledger (36) and (17).
-36. Local Ledger State (Replica) is the distributed ledger technology that supports the persistence, management of DID Documents (16) persisted to the ledger as Indy NYM and ATTRIB transactions (17).
-37. Ledge Agent Node 2 is an example of another Ledge Agent Node in the ecosystem. Communication between Ledge Agent Nodes takes place using the Indy Ledger-to-Ledger Protocol (38).
-38. Local Ledger State (Replica) is the distributed ledger technology that supports the persistence, management of DID Documents (16) persisted to the ledger as Indy NYM and ATTRIB transactions (17).
+35. Ledge Agent Nodes support the requirements of Edge Agent (24) and Cloud Agent (31) applications for persisting, managing, and interacting with DID Documents (16) persisted to the VDR (36) and (17).
+36.Verifiable Data Registry (VDR) (replica) is the distributed ledger technology that supports the persistence, management of DID Documents (16) persisted to the ledger as Indy NYM and ATTRIB transactions (17).
+37. Ledge Agent Node 2 is an example of another Ledge Agent Node in the ecosystem. Communication between Ledge Agent Nodes takes place using the Indy Ledger-to-Ledger Protocol (39).
+38.Verifiable Data Registry (VDR) (replica) is the distributed ledger technology that supports the persistence, management of DID Documents (16) persisted to the ledger as Indy NYM and ATTRIB transactions (17).
 39. The Indy Ledger-to-Ledger Protocol is the protocol used for communication between Ledger Nodes (35) and (37).
 40. Credential Registry Agent Node is a repository for persisting, managing, and interacting with Verified Credentials. It’s implementation is based on technologies similar to those used to implement Cloud Edge Agents.
-41. DID Resolver Lightweight Node is a component that is used by Edge Agent (24) and Cloud Agent (31) applications to resolve a id (DID) (13) into a specific DID Document (16) (assuming the DID Document has been persisted to the Indy Ledger (36) and (17)). The DID Resolver Lightweight Node relies on a Ledger Node (35) and (37) to gain access to the Indy Transactions (17) on the Indy Ledger (36). The DID Document is returned as an attribute of a DID Resolver Response (43) a the DID Resolver Node.
-42. The DID Resolver Response is returned by the DID Resolver Lightweight Node (40) in response to a request to resolve a particular id (DID). The DID Resolver Response contains a didDocument attribute that, in turn, contains the corresponding DID Document (16) (assuming the DID Document exists on the Indy Ledger (36), (42) and (17)).
+41. DID Resolver Lightweight Node is a component that is used by Edge Agent (24) and Cloud Agent (31) applications to resolve a id (DID) (13) into a specific DID Document (16) (assuming the DID Document has been persisted to the VDR (36), (38) and (17)). The DID Resolver Lightweight Node relies on a Ledger Node (35) and (37) to gain access to the Indy Transactions (17) on the VDR (36) and (38). The DID Document is returned as an attribute of a DID Resolver Response (43) a the DID Resolver Node.
+42. The DID Resolver Response is returned by the DID Resolver Lightweight Node (40) in response to a request to resolve a particular id (DID). The DID Resolver Response contains a didDocument attribute that, in turn, contains the corresponding DID Document (16) (assuming the DID Document exists on the VDR (36), (38) and (17)).
 43. The DIF Universal-Resolver Project distribution is used to implement the DID Resolver Lightweight Node (41) functionality.
 44. **Application Layer – DID Data Model** captures the key application-level model elements related to DIDs such as SEND_NYM Message (45).
 45. A SEND_NYM message is used to create a Verifiable DID on the Ledger (17)
