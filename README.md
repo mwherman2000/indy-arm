@@ -168,7 +168,7 @@ The Narration section that follows the graphic includes a description of each of
 
 Click on the graphic to enlarge it in a separate browser tab. Suggestion: Drag the new browser tab onto a second monitor if you have one.
 
-![INDY ARM: All-in Viewpoint](images/HBB-Indy-Sovrin&#32;ARM&#32;v0.23.png)
+![INDY ARM: All-in Viewpoint](images/HBB-Indy-Sovrin&#32;ARM&#32;v0.27.png)
 
 Figure 1. Hyperledger Indy/Sovrin/DID Comprehensive Architecture Reference Model (INDY ARM): All-in Viewpoint
 
