@@ -11,7 +11,7 @@ Update cycle: As required - sometimes several times in a single day.
 
 Click here: [Indy ARM Interactive Explorer](https://mwherman2000.github.io/indy-arm/)
 
-[![Indy ARM Interactive Explorer](images/sovrin-arm-explorer.png)](https://mwherman2000.github.io/indy-arm/)
+[![Indy ARM Interactive Explorer](images/indy-arm-explorer.png)](https://mwherman2000.github.io/indy-arm/)
 
 ## Table of Contents
 
