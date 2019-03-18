@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<archimate:model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:archimate="http://www.archimatetool.com/archimate" name="INDY ARM" id="6bed1487-50bb-4dde-b25a-53e05b325924" version="4.0.1">
+<archimate:model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:archimate="http://www.archimatetool.com/archimate" name="Hyperledger Indy/Sovrin/DID Comprehensive Architecture Reference Model (INDY ARM)" id="6bed1487-50bb-4dde-b25a-53e05b325924" version="4.0.1">
   <folder name="Strategy" id="af0755a8-738b-4f1b-8382-19b41654a882" type="strategy"/>
   <folder name="Business" id="5a729aa6-6449-4bdd-bec7-a2a545f542a0" type="business">
     <element xsi:type="archimate:BusinessService" name="..." id="7b8e2fce-0824-464d-81c9-6a8c07a4f649"/>
@@ -33,7 +33,7 @@
     <element xsi:type="archimate:BusinessEvent" name="Business Document Delete Event" id="a8580925-efb7-4402-b638-f31b194563da"/>
     <element xsi:type="archimate:BusinessProcess" name="Machine Automation" id="e0795bf4-17df-4d1f-80c9-ce339d7a0259"/>
     <element xsi:type="archimate:BusinessProcess" name="Data Vault" id="f396d531-1b72-479c-b118-b1b3d4eeff50"/>
-    <element xsi:type="archimate:BusinessProcess" name="Feed-back" id="a251776f-722b-46d0-bbdb-7f4f92971af9"/>
+    <element xsi:type="archimate:BusinessProcess" name="Feedback" id="a251776f-722b-46d0-bbdb-7f4f92971af9"/>
     <element xsi:type="archimate:BusinessRole" name="Issuer Role" id="15305028-0629-4287-830f-50398d72a278">
       <documentation>2. An Issuer issues a self-sovereign identity (SSI) for a Subject; e.g. a Birth Certificate or a Purchase Order (3). In this example, the SSI is for a Thing (10); in particular, a completed and approved Purchase Order (3) (or Birth Certificate). The Purchase Order is issued to a Holder. Both the Issuer and the Holder work for a fictitious company called Acme Corporation.&#xD;
 </documentation>
@@ -58,17 +58,52 @@
     <element xsi:type="archimate:BusinessObject" name="SS Digital Identity" id="1b36c07c-e89a-4f67-942f-e5abdb03aab1"/>
     <element xsi:type="archimate:BusinessObject" name="SS Digital Identity" id="7e16fbc8-50ca-40f2-a2c1-bb15e21c0896"/>
     <element xsi:type="archimate:BusinessObject" name="SS Digital Identity" id="52cb7287-3a34-414f-8811-1ceb81549f3e"/>
-    <element xsi:type="archimate:BusinessActor" name="Actor (Person)" id="83c65593-e2fd-4414-a6fb-64f1660e89ca"/>
-    <element xsi:type="archimate:BusinessActor" name="Actor (Organization)" id="f4a13e7e-7923-4ee8-8287-9450fac6b241"/>
+    <element xsi:type="archimate:BusinessActor" name="Actor (Person)" id="83c65593-e2fd-4414-a6fb-64f1660e89ca">
+      <documentation>9. An Actor is “a business entity that is capable of performing behavior.” [ARCHIMATE]&#xD;
+Examples of Actors include Persons, Organizations, and Software Agents.&#xD;
+An Actor can have a Controller (P7). A Controller of an Actor is an Actor (P7).</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessActor" name="Actor (Organization)" id="f4a13e7e-7923-4ee8-8287-9450fac6b241">
+      <documentation>9. An Actor is “a business entity that is capable of performing behavior.” [ARCHIMATE]&#xD;
+Examples of Actors include Persons, Organizations, and Software Agents.&#xD;
+An Actor can have a Controller (P7). A Controller of an Actor is an Actor (P7).</documentation>
+    </element>
     <element xsi:type="archimate:BusinessObject" name="SS Digital Identity" id="4015a8f1-458f-45fd-9029-2624ec09b1d4"/>
-    <element xsi:type="archimate:BusinessProcess" name="Process" id="9b7a0807-55e3-4b50-8eea-e105c96d6c1c"/>
-    <element xsi:type="archimate:BusinessObject" name="Thing (Pet, Car, House)" id="ab93d60d-7e35-40d3-bb31-7f3b0f1ebaf2"/>
+    <element xsi:type="archimate:BusinessProcess" name="Process" id="9b7a0807-55e3-4b50-8eea-e105c96d6c1c">
+      <documentation>11. (Business) Processes. Actors (Persons, Organizations, and Software Agents) participate in Processes. A Process acts on/accesses Things (e.g. a Pet (with an embedded ID chip), Car, House, Business Document, Product, Assembly, Part) to perform work.</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessObject" name="Thing (Pet, Car, House)" id="ab93d60d-7e35-40d3-bb31-7f3b0f1ebaf2">
+      <documentation>10. A Thing is Non-Fungible Entity (NFE) (P9).&#xD;
+Examples of Things include Pets (with embedded ID chips), Cars, Houses, Business Documents, Products, Assemblies, and Parts.&#xD;
+The software component of a Software Agent is a Thing. If you’re talking about Software Agent as a business entity capable of performing behavior, then the Software Agent, in this context, is an Actor.&#xD;
+A slice of a particular kind of Toast is not a Thing because it is fungible (P8) and (P9). A slice of Toast can be a Thing in the future when each slice of bread has its own bar code or serial number. A photo of a slice of Toast is a Thing because it is non-fungible (most photographs are non-fungible; hence, are Things).&#xD;
+A living cell (skin cell, blood cell, etc.) is not considered to be an Actor (or a Thing). It is not a business entity nor a Non-Fungible Entity (P9) (within a single body of DNA) ..at least, not for the foreseeable future.&#xD;
+A Thing has a Controller (P2). A Controller of a Thing is an Actor (P2).</documentation>
+    </element>
     <element xsi:type="archimate:BusinessObject" name="SS Digital Identity" id="90bb518b-4f7f-452b-88b0-2387273b6af4"/>
-    <element xsi:type="archimate:Representation" name="Thing (Product, Assembly, Part)" id="314cf398-2cfe-4b43-99be-4e06d807e126"/>
+    <element xsi:type="archimate:Representation" name="Thing (Product, Assembly, Part)" id="314cf398-2cfe-4b43-99be-4e06d807e126">
+      <documentation>10. A Thing is Non-Fungible Entity (NFE) (P9).&#xD;
+Examples of Things include Pets (with embedded ID chips), Cars, Houses, Business Documents, Products, Assemblies, and Parts.&#xD;
+The software component of a Software Agent is a Thing. If you’re talking about Software Agent as a business entity capable of performing behavior, then the Software Agent, in this context, is an Actor.&#xD;
+A slice of a particular kind of Toast is not a Thing because it is fungible (P8) and (P9). A slice of Toast can be a Thing in the future when each slice of bread has its own bar code or serial number. A photo of a slice of Toast is a Thing because it is non-fungible (most photographs are non-fungible; hence, are Things).&#xD;
+A living cell (skin cell, blood cell, etc.) is not considered to be an Actor (or a Thing). It is not a business entity nor a Non-Fungible Entity (P9) (within a single body of DNA) ..at least, not for the foreseeable future.&#xD;
+A Thing has a Controller (P2). A Controller of a Thing is an Actor (P2).</documentation>
+    </element>
     <element xsi:type="archimate:BusinessObject" name="SS Digital Identity" id="41c7007f-623c-4e7e-92e2-327abedb67ec"/>
-    <element xsi:type="archimate:BusinessActor" name="Actor (Software Agent)" id="7df22e90-0730-462c-9bcb-66e3f20082a1"/>
+    <element xsi:type="archimate:BusinessActor" name="Actor (Software Agent)" id="7df22e90-0730-462c-9bcb-66e3f20082a1">
+      <documentation>9. An Actor is “a business entity that is capable of performing behavior.” [ARCHIMATE]&#xD;
+Examples of Actors include Persons, Organizations, and Software Agents.&#xD;
+An Actor can have a Controller (P7). A Controller of an Actor is an Actor (P7).</documentation>
+    </element>
     <element xsi:type="archimate:BusinessActor" name="Real-Life Actor &quot;Alice&quot; (Person, Organization, Software Agent)" id="5f57e3f1-bbe9-41b7-b90d-be299a2d4201"/>
-    <element xsi:type="archimate:Representation" name="Thing (Business Document)" id="69e0bb89-8c94-473f-b912-83fb5ec8e01d"/>
+    <element xsi:type="archimate:Representation" name="Thing (Business Document)" id="69e0bb89-8c94-473f-b912-83fb5ec8e01d">
+      <documentation>10. A Thing is Non-Fungible Entity (NFE) (P9).&#xD;
+Examples of Things include Pets (with embedded ID chips), Cars, Houses, Business Documents, Products, Assemblies, and Parts.&#xD;
+The software component of a Software Agent is a Thing. If you’re talking about Software Agent as a business entity capable of performing behavior, then the Software Agent, in this context, is an Actor.&#xD;
+A slice of a particular kind of Toast is not a Thing because it is fungible (P8) and (P9). A slice of Toast can be a Thing in the future when each slice of bread has its own bar code or serial number. A photo of a slice of Toast is a Thing because it is non-fungible (most photographs are non-fungible; hence, are Things).&#xD;
+A living cell (skin cell, blood cell, etc.) is not considered to be an Actor (or a Thing). It is not a business entity nor a Non-Fungible Entity (P9) (within a single body of DNA) ..at least, not for the foreseeable future.&#xD;
+A Thing has a Controller (P2). A Controller of a Thing is an Actor (P2).</documentation>
+    </element>
     <element xsi:type="archimate:Product" name="Real-Life Thing &quot;ThingamaBob&quot; (Pet, Car, House, Business Document, Product, Assembly, Part)" id="39c0ec89-b55b-42a6-957c-9d7c2e29ec66"/>
     <element xsi:type="archimate:BusinessActor" name="Virtual Actor &quot;Alice&quot; (Person, Organization, Software Agent)" id="576dcb0d-782a-4e9d-98d0-644e0630da07"/>
     <element xsi:type="archimate:Product" name="Virtual Thing &quot;ThingamaBob&quot; (Pet, Car, House, Business Document, Product, Assembly, Part)" id="27170c07-6913-433a-8dac-4f5f54c99afc"/>
@@ -132,7 +167,11 @@
     <element xsi:type="archimate:ApplicationComponent" name="Edge Lightweight App Component" id="366ceace-4919-48b3-908a-a649f90df531"/>
     <element xsi:type="archimate:ApplicationFunction" name="Edge Lightweight App Functions" id="e7790e17-4094-4604-b78c-09a4fe70d8a4"/>
     <element xsi:type="archimate:DataObject" name="DID Entity" id="e36b120d-5ad7-44c5-98f3-94509d94f782"/>
-    <element xsi:type="archimate:DataObject" name="id (DID)" id="1819cbf9-d6f0-4713-bc39-c8bded8777ed"/>
+    <element xsi:type="archimate:DataObject" name="id (DID)" id="1819cbf9-d6f0-4713-bc39-c8bded8777ed">
+      <documentation>13. id (DID) exists as an attribute of a DID Entity (14) (and by implication, as an attribute of DID Document (16), the JSON-LD serialization of the corresponding DID Entity (14)).&#xD;
+The id (DID) attribute is given the nickname “DID” (aka Decentralized Identifier) for convenience; but more importantly, to clarify what a DID specifically refers to (as well as to clarify what the term DID specifically does not refer to). “DID” should only be used to refer to the id (DID) attribute of a DID Entity (or DID Document).&#xD;
+id (DID) are used to index, find, and retrieve DID Documents from the Technology Layer (30).</documentation>
+    </element>
     <element xsi:type="archimate:DataObject" name="service (endpoints)" id="0561c396-8bd9-45f0-bbe4-24056d84f51b"/>
     <element xsi:type="archimate:DataObject" name="authentication" id="b5a363dc-15e1-4226-a9d3-c1af5c691f07"/>
     <element xsi:type="archimate:DataObject" name="publicKey" id="851e97f5-252e-4c83-9b49-93d61b366b16"/>
@@ -150,12 +189,27 @@
     <element xsi:type="archimate:DataObject" name="Metadata Document for Virtual (Real-life) Something (returned by the Service Endpoint for id (DID))" id="3282fc44-5787-4aa7-90a6-49307c4f7c35"/>
     <element xsi:type="archimate:ApplicationComponent" name="Client App (or Service)" id="7c729851-e738-4291-8338-c4314df6dbdb"/>
     <element xsi:type="archimate:ApplicationComponent" name="DID Resolver" id="ee5bbe74-9d8d-4184-8d07-c27e830bdd51"/>
-    <element xsi:type="archimate:DataObject" name="DID Entity" id="ee4cf828-6786-4e75-8863-5578f96daf5e"/>
-    <element xsi:type="archimate:DataObject" name="id (DID)" id="cd41835a-98c6-452a-ab8c-b3ea96d9032a"/>
+    <element xsi:type="archimate:DataObject" name="DID Entity" id="ee4cf828-6786-4e75-8863-5578f96daf5e">
+      <documentation>14. A DID Entity is a data structure comprised of a collection of key-value pairs with keys such as: id (DID), service (endpoints), authentication, publicKey, @context, etc. (P4)&#xD;
+DID Entities have a set of attributes that includes the following:&#xD;
+id (DID)&#xD;
+service (endpoints)&#xD;
+authentication&#xD;
+publicKey&#xD;
+@context&#xD;
+etc.</documentation>
+    </element>
+    <element xsi:type="archimate:DataObject" name="id (DID)" id="cd41835a-98c6-452a-ab8c-b3ea96d9032a">
+      <documentation>47. The dest subattribute in the SEND_NYM message is associated (assigned the value) of the DID of the subject.</documentation>
+    </element>
     <element xsi:type="archimate:ApplicationService" name="Indy Agent Service Endpoint" id="1224c4fd-d53c-4aba-ac9f-c993bed7f12a"/>
     <element xsi:type="archimate:DataObject" name="..." id="d273c82f-3ae2-40e9-9e43-7c08e6c394d4"/>
-    <element xsi:type="archimate:DataObject" name="verkey" id="bed48a94-e89b-46dd-b575-6f3235f49b10"/>
-    <element xsi:type="archimate:DataObject" name="SEND_NYM Message" id="db618272-9149-4223-8025-aff8987adb95"/>
+    <element xsi:type="archimate:DataObject" name="verkey" id="bed48a94-e89b-46dd-b575-6f3235f49b10">
+      <documentation>48. The verkey subattribute in the SEND_NYM message is associated (assigned the value) of the verkey of the subject.</documentation>
+    </element>
+    <element xsi:type="archimate:DataObject" name="SEND_NYM Message" id="db618272-9149-4223-8025-aff8987adb95">
+      <documentation>45. A SEND_NYM message is used to create a Verifiable DID on the Ledger (17)</documentation>
+    </element>
     <element xsi:type="archimate:DataObject" name="reqId" id="3cd85b81-de07-488a-ad06-8d6bd6139794"/>
     <element xsi:type="archimate:DataObject" name="identifier" id="930d3d0a-735f-478d-abfd-0bbf53283a6b"/>
     <element xsi:type="archimate:DataObject" name="operation" id="b784d921-1e5c-44da-be13-b029eb5e98f0"/>
@@ -164,18 +218,26 @@
     <element xsi:type="archimate:DataObject" name="type" id="06af4e8b-71a6-46d3-8ac8-a27d70d84767"/>
     <element xsi:type="archimate:DataObject" name="verkey" id="657f020f-99b9-4156-b383-362904e83efd"/>
     <element xsi:type="archimate:DataObject" name="protocolVersion" id="c5ac7023-dec4-4c21-bc90-77e5ed6db3fd"/>
-    <element xsi:type="archimate:DataObject" name="id (TRUST_ANCHOR DID)" id="e3719aad-d431-45d1-8e9c-2921fc704c57"/>
+    <element xsi:type="archimate:DataObject" name="id (TRUST_ANCHOR DID)" id="e3719aad-d431-45d1-8e9c-2921fc704c57">
+      <documentation>46. The identifier attribute in the SEND_NYM message is associated (assigned the value) of the DID of the steward/trustee.</documentation>
+    </element>
   </folder>
   <folder name="Technology &amp; Physical" id="c87827f3-95e4-47c1-9fb4-7fb2c17227e4" type="technology">
     <element xsi:type="archimate:TechnologyService" name="..." id="30168689-e460-4154-a5cd-7c66d96ef58d"/>
     <element xsi:type="archimate:TechnologyService" name="..." id="8ccd0d61-5f4d-44e1-9622-f5c727f95619"/>
-    <element xsi:type="archimate:Artifact" name="Verifiable Data Registry (VDR) (replica)" id="19a38f01-b03d-484e-9094-930410d15c8a"/>
-    <element xsi:type="archimate:TechnologyService" name="Ledger Node Service Endpoint" id="5cf2a362-bc0b-4253-92c6-3347eff58a7d"/>
+    <element xsi:type="archimate:Artifact" name="Verifiable Data Registry (VDR) (replica)" id="19a38f01-b03d-484e-9094-930410d15c8a">
+      <documentation>36/38. Verifiable Data Registry (VDR) (replica) is the distributed ledger technology that supports the persistence, management of DID Documents (16) persisted to the ledger as Indy NYM and ATTRIB transactions (17).</documentation>
+    </element>
+    <element xsi:type="archimate:TechnologyService" name="Ledger Node Service Endpoint" id="5cf2a362-bc0b-4253-92c6-3347eff58a7d">
+      <documentation>53. Indy Ledger Node Service Endpoint (Ledger Node 1)</documentation>
+    </element>
     <element xsi:type="archimate:Node" name="Ledger Node Component" id="fea26e60-1620-4260-b5b2-00849348e884"/>
     <element xsi:type="archimate:SystemSoftware" name="Indy-Node Distribution" id="0696752d-d46b-4163-b5f6-22633257c473"/>
     <element xsi:type="archimate:SystemSoftware" name="Indy-Plenum Distribution" id="c9e3d822-bbeb-424e-ab64-dd86629b92bb"/>
     <element xsi:type="archimate:TechnologyFunction" name="Ledger Node Functions" id="f3fc870f-9409-4959-9980-0ca67468705a"/>
-    <element xsi:type="archimate:TechnologyService" name="Indy Agent Service Endpoint" id="b51febae-5872-4f76-b640-adb3714998c0"/>
+    <element xsi:type="archimate:TechnologyService" name="Indy Agent Service Endpoint" id="b51febae-5872-4f76-b640-adb3714998c0">
+      <documentation>51. Indy Agent Service Endpoint (Cloud Agent 1)</documentation>
+    </element>
     <element xsi:type="archimate:Node" name="Indy Agent Component" id="9d8a6f0d-e532-4c90-aa31-b5d1d97bd7c8"/>
     <element xsi:type="archimate:TechnologyFunction" name="Indy Agent Functions" id="27410842-620a-4e4d-80f2-98f1f7034ec5"/>
     <element xsi:type="archimate:TechnologyService" name="Indy Wallet Service" id="e45473cd-a2a1-4522-9d91-83548afc2c11"/>
@@ -190,19 +252,41 @@
     <element xsi:type="archimate:SystemSoftware" name="libVCX Distribution" id="f8f978e5-54ee-4de7-ae20-8563ac46e52a"/>
     <element xsi:type="archimate:Artifact" name="Indy Agent Storage" id="4be693a7-c2ce-41e8-8f5c-c0df6651edf6"/>
     <element xsi:type="archimate:Artifact" name="Indy Wallet Pluggable Storage" id="bb58f90c-d3b7-4782-a8fb-df9874e233b7"/>
-    <element xsi:type="archimate:TechnologyService" name="Ledger Node Service Endpoint" id="d68fc0f2-e335-405e-957f-0e389b2d3e98"/>
-    <element xsi:type="archimate:Artifact" name="Verifiable Data Registry (VDR) (replica)" id="e085d8cc-9395-4c62-b3b5-377c8d5527f0"/>
+    <element xsi:type="archimate:TechnologyService" name="Ledger Node Service Endpoint" id="d68fc0f2-e335-405e-957f-0e389b2d3e98">
+      <documentation>54. Indy Ledger Node Service Endpoint (Ledger Node 2)</documentation>
+    </element>
+    <element xsi:type="archimate:Artifact" name="Verifiable Data Registry (VDR) (replica)" id="e085d8cc-9395-4c62-b3b5-377c8d5527f0">
+      <documentation>36/38. Verifiable Data Registry (VDR) (replica) is the distributed ledger technology that supports the persistence, management of DID Documents (16) persisted to the ledger as Indy NYM and ATTRIB transactions (17).</documentation>
+    </element>
     <element xsi:type="archimate:Artifact" name="Credential Registry Node Storage" id="6c11927d-5add-4555-ba2c-39f37edcfe69"/>
-    <element xsi:type="archimate:TechnologyService" name="Indy Credential Registry Node Service Endpoint" id="48c2d05a-2218-4325-8bdc-d5b95f79c207"/>
+    <element xsi:type="archimate:TechnologyService" name="Indy Credential Registry Node Service Endpoint" id="48c2d05a-2218-4325-8bdc-d5b95f79c207">
+      <documentation>55. Indy Credential Registry Service Endpoint</documentation>
+    </element>
     <element xsi:type="archimate:Node" name="Indy Credential Registry Node Component" id="73b0634d-e090-4b68-a799-e9146f15af7f"/>
     <element xsi:type="archimate:TechnologyFunction" name="Indy Credential Registry Node Functions" id="459ca5a8-ad30-43b1-9e34-fb3a935630ce"/>
     <element xsi:type="archimate:TechnologyInterface" name="Indy Credential Registry Node API" id="1ca005ae-bef0-4f04-a206-8b10b6f3b652"/>
-    <element xsi:type="archimate:Path" name="A2A Protocol" id="c0e6afed-1346-4e31-879f-3ee870e64019"/>
-    <element xsi:type="archimate:TechnologyService" name="DID Resolver Node Service Endpoint" id="0f81eb28-c189-4037-9b95-cd7e0b49bb52"/>
+    <element xsi:type="archimate:Path" name="A2A Protocol" id="c0e6afed-1346-4e31-879f-3ee870e64019">
+      <documentation>27/34. The Indy Agent-to-Agent Protocol (A2A Protocol) is the protocol used for communication between Edge Agent Apps (24) and (26) and Cloud Agent Nodes (31) and (33).</documentation>
+    </element>
+    <element xsi:type="archimate:TechnologyService" name="DID Resolver Node Service Endpoint" id="0f81eb28-c189-4037-9b95-cd7e0b49bb52">
+      <documentation>56. DID Resolver Service Endpoint</documentation>
+    </element>
     <element xsi:type="archimate:Node" name="DID Resolver Node Component" id="0faca120-5b39-4656-8e1c-95010c5b6acd"/>
     <element xsi:type="archimate:TechnologyFunction" name="DID Resolver Node Functions" id="f554e402-323c-4619-a39f-023f814775f0"/>
     <element xsi:type="archimate:TechnologyInterface" name="DID Resolver Node API" id="15f5f443-8fb7-4531-8391-afbeeeb6a4af"/>
-    <element xsi:type="archimate:Artifact" name="DID Document (JSON)" id="b35d1987-1cf4-427e-b058-fa4154b8cf79"/>
+    <element xsi:type="archimate:Artifact" name="DID Document (JSON)" id="b35d1987-1cf4-427e-b058-fa4154b8cf79">
+      <documentation>16. A DID Document is a JSON-LD serialization of a DID Entity (14).&#xD;
+A DID Document has a set of attributes that includes the following:&#xD;
+id (DID) (13)&#xD;
+service (endpoints)&#xD;
+authentication&#xD;
+publicKey&#xD;
+@context&#xD;
+etc.&#xD;
+The id (DID) attribute (13) is the unique identifier or key for the DID Document.&#xD;
+The id (DID) attribute is given the nickname “DID” (aka Decentralized Identifier) for convenience; but more importantly, to clarify what a DID specifically refers to (as well as to clarify what the term DID specifically does not refer to). “DID” should only be used to refer to the id (DID) attribute of a DID Entity (14) (or DID Document).&#xD;
+id (DID) are used to index, find, and retrieve DID Documents from the Technology Layer (30). id (DID) exists as an attribute of a DID Entity (14) (and by implication, as an attribute of DID Document, the JSON-LD serialization of the corresponding DID Entity).</documentation>
+    </element>
     <element xsi:type="archimate:Artifact" name="Schema ID" id="4f754306-3bca-4316-8e0f-acf8b378599a"/>
     <element xsi:type="archimate:Artifact" name="Schema Document" id="93ee85eb-5ca7-4310-a4bc-53d21df6d76b"/>
     <element xsi:type="archimate:Artifact" name="Mapping Document: flatten entity graph into a flat serialized format" id="790e44b5-9313-47b4-b1eb-7e4602b13748"/>
@@ -220,7 +304,11 @@
     <element xsi:type="archimate:Artifact" name="Revocation ..." id="8583b35c-e3e5-41cb-96f8-f56d577512ad"/>
     <element xsi:type="archimate:Artifact" name="id (DID)" id="f5f56216-8705-4709-9c6e-09086a92bee8"/>
     <element xsi:type="archimate:Artifact" name="DID Document" id="1a8c7be3-414d-42bb-9383-b99aec75fea4"/>
-    <element xsi:type="archimate:Artifact" name="Verifiable Data Registry (VDR)" id="6c6ca2b6-2750-4e81-93e2-10d2a5ea19a3"/>
+    <element xsi:type="archimate:Artifact" name="Verifiable Data Registry (VDR)" id="6c6ca2b6-2750-4e81-93e2-10d2a5ea19a3">
+      <documentation>17. When DID Documents (16), in turn, are serialized to the Verifiable Data Registry (VDR) (replica) (36) and (38) by the Indy Ledger Nodes (35) and (37), they are stored as a series of Indy VDR Transactions. Edge Agents and Cloud Agents call an VDR Node to persist a DID Document to the VDR. DID Documents, specifically, are written to the VDR by the Indy Ledger Nodes using:&#xD;
+Indy NYM transactions (50), and&#xD;
+Indy ATTRIB transactions.</documentation>
+    </element>
     <element xsi:type="archimate:Node" name="Ledger Node" id="ad9d0c1e-b9fa-45f7-bba9-bf3bf3c3b48d"/>
     <element xsi:type="archimate:Artifact" name="..." id="2bda89ec-44f9-467c-aaec-559a1cd4c213"/>
     <element xsi:type="archimate:Node" name="DID Resolver" id="da081738-adc7-4c62-9daf-abbe41e2d951"/>
@@ -238,14 +326,20 @@
     <element xsi:type="archimate:Artifact" name="publicKey" id="aed87c74-ac67-48e8-887b-8c2e91165f20"/>
     <element xsi:type="archimate:Artifact" name="@context" id="79f88a9d-35f7-4396-b6c4-8cf212142887"/>
     <element xsi:type="archimate:Artifact" name="..." id="31daa24d-b559-4fc0-a36c-62e5e4668576"/>
-    <element xsi:type="archimate:TechnologyService" name="Indy Agent Service Endpoint" id="11a06c93-998d-44af-86f7-e0bcf629571b"/>
+    <element xsi:type="archimate:TechnologyService" name="Indy Agent Service Endpoint" id="11a06c93-998d-44af-86f7-e0bcf629571b">
+      <documentation>52. Indy Agent Service Endpoint (Cloud Agent 2)</documentation>
+    </element>
     <element xsi:type="archimate:Artifact" name="..." id="cb3667f2-5313-45a7-b72e-1793176e0daf"/>
-    <element xsi:type="archimate:Artifact" name="DID Resolver Response" id="5cf4f7ea-3d07-4521-a446-2e98d22ed497"/>
+    <element xsi:type="archimate:Artifact" name="DID Resolver Response" id="5cf4f7ea-3d07-4521-a446-2e98d22ed497">
+      <documentation>42. The DID Resolver Response is returned by the DID Resolver Lightweight Node (40) in response to a request to resolve a particular id (DID). The DID Resolver Response contains a didDocument attribute that, in turn, contains the corresponding DID Document (16) (assuming the DID Document exists on the VDR (36), (38) and (17)).</documentation>
+    </element>
     <element xsi:type="archimate:Artifact" name="..." id="f685a6f8-b60c-45f5-bf7b-f809cd6338a6"/>
     <element xsi:type="archimate:Artifact" name="methodMetadata" id="088e6dad-da82-4843-bc2d-3383aa617479"/>
     <element xsi:type="archimate:Artifact" name="didDocument" id="15ad3527-84cd-4d18-ab98-07a592b2c456"/>
     <element xsi:type="archimate:Artifact" name="resolverMetadata" id="40f3d79b-13dc-41e6-a2d4-c011468474db"/>
-    <element xsi:type="archimate:SystemSoftware" name="Universal-Resolver drivers/sov Distribution" id="dccd66a9-5453-40c3-b01f-8a8cd3aac8c9"/>
+    <element xsi:type="archimate:SystemSoftware" name="Universal-Resolver drivers/sov Distribution" id="dccd66a9-5453-40c3-b01f-8a8cd3aac8c9">
+      <documentation>43. The DIF Universal-Resolver Project distribution is used to implement the DID Resolver Lightweight Node (41) functionality.</documentation>
+    </element>
     <element xsi:type="archimate:Artifact" name="..." id="0388798a-0810-40d7-b141-00bf5286265a"/>
     <element xsi:type="archimate:Artifact" name="..." id="98718327-1e38-4833-9d9a-63ac12b2f45d"/>
     <element xsi:type="archimate:Artifact" name="..." id="35f29574-528f-4cd1-9f47-c7b375af938f"/>
@@ -254,7 +348,9 @@
     <element xsi:type="archimate:Artifact" name="CLAIM_DEF Tx" id="b2278f34-0901-4a34-afd7-efaba23b808a"/>
     <element xsi:type="archimate:Artifact" name="..." id="12f81636-a8be-47b9-8fcd-b749db55b261"/>
     <element xsi:type="archimate:Artifact" name="..." id="7dd8b86c-804a-465b-981b-60057ca0bdfd"/>
-    <element xsi:type="archimate:Path" name="Ledger-to-Ledger Protocol" id="c1986e4f-fb0f-406c-8051-9aafb8e8bc61"/>
+    <element xsi:type="archimate:Path" name="Ledger-to-Ledger Protocol" id="c1986e4f-fb0f-406c-8051-9aafb8e8bc61">
+      <documentation>39. The Indy Ledger-to-Ledger Protocol is the protocol used for communication between Ledger Nodes (35) and (37).</documentation>
+    </element>
     <element xsi:type="archimate:Artifact" name="1. DID Identifier Data Model: DID Syntax" id="8643bb45-ad78-4225-b5f0-17d1eca5957b"/>
     <element xsi:type="archimate:Artifact" name="2. DID Private/Public Key Pairs and Wallets" id="016519ce-eff3-411d-8d99-0089436f923c"/>
     <element xsi:type="archimate:Artifact" name="3. Verifiable DID Layer: (DID, Keys) => Verifiable NYM Transaction (or equiv)" id="64ad1f8f-f87c-4649-baa1-fb9b5bfe5caf"/>
@@ -262,7 +358,9 @@
     <element xsi:type="archimate:Artifact" name="5. Agents and Service Endpoints" id="cba1f93d-c2f3-49b4-b374-c453fe854251"/>
     <element xsi:type="archimate:Artifact" name="6. DID Document Verification Layer" id="8165ffd5-7786-4856-bf03-cf0877fe3cc4"/>
     <element xsi:type="archimate:Artifact" name="6. Agent to Agent (A2A) Communications Protocol" id="7f36a936-7a7d-46a3-81ca-673fab32fd8f"/>
-    <element xsi:type="archimate:Artifact" name="NYM Transaction (Detail)" id="8800962b-44f0-427f-937e-82f43ce22b28"/>
+    <element xsi:type="archimate:Artifact" name="NYM Transaction (Detail)" id="8800962b-44f0-427f-937e-82f43ce22b28">
+      <documentation>50. Indy NYM Transaction</documentation>
+    </element>
     <element xsi:type="archimate:Artifact" name="dest" id="7b2e55be-b870-4d28-b6f5-f3e61701a503"/>
     <element xsi:type="archimate:Artifact" name="alias" id="0c746f05-b335-4ee7-baa4-451f6fb27297"/>
     <element xsi:type="archimate:Artifact" name="verkey" id="ad3654e3-70a2-4bb7-9812-6bfabc85cf3f"/>
@@ -503,7 +601,9 @@
     <element xsi:type="archimate:FlowRelationship" id="f2a3c256-1065-46fb-8f22-8a6cf8b965b8" source="c1986e4f-fb0f-406c-8051-9aafb8e8bc61" target="d68fc0f2-e335-405e-957f-0e389b2d3e98"/>
     <element xsi:type="archimate:RealizationRelationship" id="8067d885-c3cc-4852-bc8e-d67eb460cfc5" source="f3fc870f-9409-4959-9980-0ca67468705a" target="d68fc0f2-e335-405e-957f-0e389b2d3e98"/>
     <element xsi:type="archimate:AccessRelationship" id="8b27098c-626e-4fb7-ba9b-03c1680f02b9" source="f3fc870f-9409-4959-9980-0ca67468705a" target="e085d8cc-9395-4c62-b3b5-377c8d5527f0" accessType="3"/>
-    <element xsi:type="archimate:AssociationRelationship" id="1c6f73c5-72ea-44f2-a615-206c97747442" source="19a38f01-b03d-484e-9094-930410d15c8a" target="6c6ca2b6-2750-4e81-93e2-10d2a5ea19a3"/>
+    <element xsi:type="archimate:AssociationRelationship" id="1c6f73c5-72ea-44f2-a615-206c97747442" source="19a38f01-b03d-484e-9094-930410d15c8a" target="6c6ca2b6-2750-4e81-93e2-10d2a5ea19a3">
+      <documentation>36/38. Verifiable Data Registry (VDR) (replica) is the distributed ledger technology that supports the persistence, management of DID Documents (16) persisted to the ledger as Indy NYM and ATTRIB transactions (17).</documentation>
+    </element>
     <element xsi:type="archimate:SpecializationRelationship" id="d4ead96d-d248-41c5-9d77-b01c8d2cd40f" source="6c6ca2b6-2750-4e81-93e2-10d2a5ea19a3" target="15ad3527-84cd-4d18-ab98-07a592b2c456"/>
     <element xsi:type="archimate:FlowRelationship" id="ff767a8c-e866-4176-ad9d-0c8e5ae75d95" source="2e3b2298-51d0-4ca2-ba2e-913f30ad20c1" target="2884338e-81b8-4646-ad0b-2fe59794eebc"/>
     <element xsi:type="archimate:ServingRelationship" id="0434103f-d2dd-4278-ad3e-e691df111bf6" source="22730399-74c4-4f9e-8643-cf03003bddd4" target="240344fd-7b2a-4393-bb27-224919fb6621"/>
@@ -655,6 +755,7 @@ The following Actor Roles are depicted in this version of the ARM: Issuer, Holde
               <sourceConnection xsi:type="archimate:Connection" id="891e5983-0552-4f0e-9782-a3116fb0d9e8" textPosition="0" source="28b6b87b-84ef-4ed5-adf9-6f8448f84857" target="700a3f2b-5ce5-441f-a4e0-2b49f5655bc9" archimateRelationship="64cb6999-57aa-4500-96c6-d510e6b0db7b"/>
               <sourceConnection xsi:type="archimate:Connection" id="3292e1bd-3748-4010-9caf-4707853d3218" source="28b6b87b-84ef-4ed5-adf9-6f8448f84857" target="f3a96513-7f47-44e5-a81a-16a2a4ac811b" archimateRelationship="a77930a6-8b63-48f5-a2a1-bff5720822a7"/>
             </child>
+            <documentation>24. The Edge Agent App 1 is an end-user application for interacting with the self-sovereign identities an Actor owns: personal, organizational, as a Controller of Thing, or as a Guardian of another Actor (9) and (10). This is typically a mobile or a desktop app.</documentation>
           </child>
           <child xsi:type="archimate:Group" id="c310f6f3-45b7-4503-9504-ca117637a66a" name="Edge Wallet">
             <bounds x="24" y="240" width="433" height="193"/>
@@ -680,7 +781,9 @@ The following Actor Roles are depicted in this version of the ARM: Issuer, Holde
             <child xsi:type="archimate:DiagramObject" id="0aaa217f-6d0e-4e29-8e94-31d57d63bf3e" targetConnections="91a7c39a-b880-494b-bbac-9a9d750b6930" archimateElement="30757b6e-4788-4e4f-a303-3ead9617304a">
               <bounds x="299" y="120" width="120" height="55"/>
             </child>
+            <documentation>25. The Edge Wallet is a mobile or desktop application component that supports the Edge Agent App’s requirements (24) for managing actual self-sovereign identities it owns.</documentation>
           </child>
+          <documentation>24. The Edge Agent App 1 is an end-user application for interacting with the self-sovereign identities an Actor owns: personal, organizational, as a Controller of Thing, or as a Guardian of another Actor (9) and (10). This is typically a mobile or a desktop app.</documentation>
         </child>
         <child xsi:type="archimate:Group" id="d2ba9758-f4b8-4f7a-ac94-6c6d00913cf1" name="Edge Agent App 2">
           <bounds x="552" y="36" width="169" height="445"/>
@@ -698,7 +801,9 @@ The following Actor Roles are depicted in this version of the ARM: Issuer, Holde
             <child xsi:type="archimate:DiagramObject" id="90228d5e-ea49-43cf-a092-129d3d946334" targetConnections="476dce56-815d-4c54-b07a-3ee92d30c7a9" archimateElement="d273c82f-3ae2-40e9-9e43-7c08e6c394d4">
               <bounds x="12" y="180" width="120" height="55"/>
             </child>
+            <documentation>26. Edge Agent App 2 is an example of another Edge Agent App in the ecosystem. Communication between Edge Agent Apps takes place using the Indy Agent-to-Agent Protocol (A2A Protocol) (27).</documentation>
           </child>
+          <documentation>26. Edge Agent App 2 is an example of another Edge Agent App in the ecosystem. Communication between Edge Agent Apps takes place using the Indy Agent-to-Agent Protocol (A2A Protocol) (27).</documentation>
         </child>
         <child xsi:type="archimate:Group" id="b6b845cc-e0ea-481d-9b1b-afec8f1e3dae" name="Edge Agent Web App" font="1|Segoe UI|9.0|1|WINDOWS|1|-12|0|0|0|700|0|0|0|0|3|2|1|34|Segoe UI">
           <bounds x="768" y="36" width="289" height="181"/>
@@ -720,6 +825,7 @@ The following Actor Roles are depicted in this version of the ARM: Issuer, Holde
             <bounds x="156" y="108" width="120" height="55"/>
             <sourceConnection xsi:type="archimate:Connection" id="ab0003c0-bebf-49e9-b0d8-beb4900a3b80" source="0783c3d4-6ff3-4332-98df-f64410af9e93" target="4cac8921-7e96-4b65-810a-0d2f7395d7dc" archimateRelationship="531b94aa-8c9e-4a47-ac72-0653fe92b18a"/>
           </child>
+          <documentation>28. The Edge Agent Web App is an Edge Agent implemented as a server-hosted web application.</documentation>
         </child>
         <child xsi:type="archimate:Group" id="6ed0eb0f-d6f1-4860-8baf-a0bea12132e1" name="Edge Agent Lightweight App" font="1|Segoe UI|9.0|1|WINDOWS|1|-12|0|0|0|700|0|0|0|0|3|2|1|34|Segoe UI">
           <bounds x="816" y="264" width="289" height="181"/>
@@ -741,7 +847,9 @@ The following Actor Roles are depicted in this version of the ARM: Issuer, Holde
             <bounds x="156" y="113" width="120" height="55"/>
             <sourceConnection xsi:type="archimate:Connection" id="5311faa3-046c-4945-82c1-f6964c7ea5cc" source="7a6de565-e066-4f3f-8a69-606e6ee0461d" target="f63877f3-febf-4ec1-88bf-f9d0c22e628e" archimateRelationship="224d78a1-131a-4eec-b7fa-b0ae00b046fb"/>
           </child>
+          <documentation>29. The Edge Agent Lightweight App (EAPA) is a mobile or desktop application that doesn’t use a local Edge Wallet. Instead, the EAPA relies on the services of a Cloud Agent (31) and Cloud Wallet (32).</documentation>
         </child>
+        <documentation>23. Applications Layer (“Edge” Layer) of the INDY ARM. “The Application Layer depicts application services that support the business, and the applications that realize them.” [ARCHIMATE]</documentation>
       </child>
       <child xsi:type="archimate:Group" id="897f52f5-5cdb-4bb6-9c4a-5f9079b70a40" name="Technology Layer - Architecture  (&quot;Cloud Location&quot; Layer)" font="1|Segoe UI|9.0|1|WINDOWS|1|-12|0|0|0|700|0|0|0|0|3|2|1|34|Segoe UI" fillColor="#d5ffd5">
         <bounds x="36" y="924" width="1141" height="829"/>
@@ -779,6 +887,7 @@ The following Actor Roles are depicted in this version of the ARM: Issuer, Holde
             <bounds x="300" y="120" width="121" height="55"/>
             <sourceConnection xsi:type="archimate:Connection" id="da2ff4e9-0085-4c1d-90f7-a2c735a265d1" source="db46c104-5577-4725-aac1-c791a96503e1" target="f6f97389-26ab-4987-a664-6ec02f9893ab" archimateRelationship="f2a3c256-1065-46fb-8f22-8a6cf8b965b8"/>
           </child>
+          <documentation>35. Ledger Agent Nodes support the requirements of Edge Agent (24) and Cloud Agent (31) applications for persisting, managing, and interacting with DID Documents (16) persisted to the VDR (36) and (17). 36.Verifiable Data Registry (VDR) (replica) is the distributed ledger technology that supports the persistence, management of DID Documents (16) persisted to the ledger as Indy NYM and ATTRIB transactions (17).</documentation>
         </child>
         <child xsi:type="archimate:Group" id="bbe1d45f-9cf8-4229-a078-db5b6b1cfcbb" name="Cloud Agent Node 1" font="1|Segoe UI|9.0|1|WINDOWS|1|-12|0|0|0|700|0|0|0|0|3|2|1|34|Segoe UI">
           <bounds x="48" y="36" width="481" height="445"/>
@@ -817,6 +926,7 @@ The following Actor Roles are depicted in this version of the ARM: Issuer, Holde
               <sourceConnection xsi:type="archimate:Connection" id="69c82649-e7a8-4802-ae2e-11b930fc86a5" source="e62d64bc-fc57-4f79-b17b-de140a38d15c" target="f3a96513-7f47-44e5-a81a-16a2a4ac811b" archimateRelationship="a77930a6-8b63-48f5-a2a1-bff5720822a7"/>
               <sourceConnection xsi:type="archimate:Connection" id="ee36f218-a234-4c11-8f38-13b8c37a6ac7" source="e62d64bc-fc57-4f79-b17b-de140a38d15c" target="700a3f2b-5ce5-441f-a4e0-2b49f5655bc9" archimateRelationship="64cb6999-57aa-4500-96c6-d510e6b0db7b"/>
             </child>
+            <documentation>31. The Could Agent App 1 is a cloud or server-based application for interacting with the self-sovereign identities an Actor owns: personal, organizational, as a Controller of Thing, or as a Guardian of another Actor (9) and (10). The Cloud Agent App is an alternative to using an Edge Agent App (24) and Edge Agent Wallet (25).</documentation>
           </child>
           <child xsi:type="archimate:Group" id="03d880b3-2624-4d56-ae2f-04c271a7e555" name="Cloud Wallet">
             <bounds x="24" y="240" width="433" height="193"/>
@@ -842,7 +952,9 @@ The following Actor Roles are depicted in this version of the ARM: Issuer, Holde
             <child xsi:type="archimate:DiagramObject" id="d2d40bb8-a2dd-4fc6-bff2-4634e6e0eb76" targetConnections="034f5f55-4e2f-4535-8be3-98313d7ce547" archimateElement="bb58f90c-d3b7-4782-a8fb-df9874e233b7">
               <bounds x="299" y="120" width="120" height="55"/>
             </child>
+            <documentation>32. The Cloud Wallet is a cloud or server-based technology component that supports the Cloud Agent App’s requirements (31) for managing actual self-sovereign identities it owns.</documentation>
           </child>
+          <documentation>31. The Could Agent App 1 is a cloud or server-based application for interacting with the self-sovereign identities an Actor owns: personal, organizational, as a Controller of Thing, or as a Guardian of another Actor (9) and (10). The Cloud Agent App is an alternative to using an Edge Agent App (24) and Edge Agent Wallet (25).</documentation>
         </child>
         <child xsi:type="archimate:Group" id="497872a3-ad10-4050-9be6-cf37525c1b13" name="Cloud Agent Node 2">
           <bounds x="552" y="36" width="169" height="445"/>
@@ -859,7 +971,9 @@ The following Actor Roles are depicted in this version of the ARM: Issuer, Holde
             <child xsi:type="archimate:DiagramObject" id="bbca1671-02d3-4bf9-89db-303a3e097110" targetConnections="0ddd5b2f-b9e1-477f-9e06-29e1cffac94a" archimateElement="cb3667f2-5313-45a7-b72e-1793176e0daf">
               <bounds x="12" y="180" width="120" height="55"/>
             </child>
+            <documentation>33. Cloud Agent App 2 is an example of another Cloud Agent App in the ecosystem. Communication between Cloud Agent Apps takes place using the Indy Agent-to-Agent Protocol (A2A Protocol) (34).</documentation>
           </child>
+          <documentation>33. Cloud Agent App 2 is an example of another Cloud Agent App in the ecosystem. Communication between Cloud Agent Apps takes place using the Indy Agent-to-Agent Protocol (A2A Protocol) (34).</documentation>
         </child>
         <child xsi:type="archimate:Group" id="014b1a59-892d-43e6-a3eb-155c9dd18d86" name="Ledger Node 2">
           <bounds x="552" y="528" width="169" height="277"/>
@@ -875,6 +989,7 @@ The following Actor Roles are depicted in this version of the ARM: Issuer, Holde
             <bounds x="24" y="192" width="120" height="61"/>
             <sourceConnection xsi:type="archimate:Connection" id="abc5aa54-d94c-4b20-851f-2716a1712fbf" source="35520724-6df1-4c3a-866a-eae7206d1ee9" target="2770b338-0e24-4da9-81bb-2d7493149c42" archimateRelationship="e24480ca-12a3-454c-8681-2528797d70d3"/>
           </child>
+          <documentation>37. Ledger Agent Node 2 is an example of another Ledge Agent Node in the ecosystem. Communication between Ledge Agent Nodes takes place using the Indy Ledger-to-Ledger Protocol (39).</documentation>
         </child>
         <child xsi:type="archimate:Group" id="f9e6485f-7a9d-43e2-92ad-ce0de7c01bdb" name="DID Resolver Lightweight Node" font="1|Segoe UI|9.0|1|WINDOWS|1|-12|0|0|0|700|0|0|0|0|3|2|1|34|Segoe UI">
           <bounds x="792" y="336" width="286" height="193"/>
@@ -901,6 +1016,7 @@ The following Actor Roles are depicted in this version of the ARM: Issuer, Holde
             <sourceConnection xsi:type="archimate:Connection" id="eb96f266-60f4-43b9-b11a-752a4db5c852" source="0197adc8-2c8c-40f7-a4e3-a9b51dd5facd" target="92c4384a-2150-4c5b-8381-b5c5b11e1ea2" archimateRelationship="0f1898d7-6d41-447a-9a27-7e0e23c6cc9b"/>
             <sourceConnection xsi:type="archimate:Connection" id="0dd159a4-2e5a-4bcd-b9c8-20a74e6d61b2" source="0197adc8-2c8c-40f7-a4e3-a9b51dd5facd" target="106a6664-7148-4bfd-b941-533cf078b6c1" archimateRelationship="b255e338-fadd-4b5e-afa4-d152e24aa799"/>
           </child>
+          <documentation>41. DID Resolver Lightweight Node is a component that is used by Edge Agent (24) and Cloud Agent (31) applications to resolve a id (DID) (13) into a specific DID Document (16) (assuming the DID Document has been persisted to the VDR (36), (38) and (17)). The DID Resolver Lightweight Node relies on a Ledger Node (35) and (37) to gain access to the Indy Transactions (17) on the VDR (36) and (38). The DID Document is returned as an attribute of a DID Resolver Response (43) a the DID Resolver Node.</documentation>
         </child>
         <child xsi:type="archimate:Group" id="b8effdd4-2d36-416b-97a7-947886ef63e4" name="Credential Registry Agent Node" font="1|Segoe UI|9.0|1|WINDOWS|1|-12|0|0|0|700|0|0|0|0|3|2|1|34|Segoe UI">
           <bounds x="756" y="36" width="301" height="265"/>
@@ -924,7 +1040,9 @@ The following Actor Roles are depicted in this version of the ARM: Issuer, Holde
             <bounds x="12" y="36" width="120" height="73"/>
             <sourceConnection xsi:type="archimate:Connection" id="f12692bd-c7b2-4f3b-b2ba-277c6d15aea5" source="d6c35ca0-71cd-41a0-9fd9-129aa5f6efc8" target="75600185-1495-45be-8fa4-b960acec2112" archimateRelationship="84c8700a-b36a-42d6-aa20-75667a7376fd"/>
           </child>
+          <documentation>40. Credential Registry Agent Node is a repository for persisting, managing, and interacting with Verified Credentials. It’s implementation is based on technologies similar to those used to implement Cloud Edge Agents.</documentation>
         </child>
+        <documentation>30. Technology Layer (“Cloud” Layer) of the INDY ARM. “The Technology Layer depicts technology services such as processing, storage, and communication services needed to run the applications, and the computer and communication hardware and system software that realize those services.” [ARCHIMATE]</documentation>
       </child>
       <child xsi:type="archimate:Note" id="8fe71ca8-6945-40fc-8318-c972b96d5be5" font="1|Segoe UI|11.25|1|WINDOWS|1|-15|0|0|0|700|0|0|0|0|3|2|1|34|Segoe UI" textAlignment="1" borderType="2">
         <bounds x="-264" y="-192" width="2257" height="37"/>
@@ -942,6 +1060,9 @@ The following Actor Roles are depicted in this version of the ARM: Issuer, Holde
           <child xsi:type="archimate:DiagramObject" id="967216c4-85fd-4145-aaae-467536426080" archimateElement="f8f978e5-54ee-4de7-ae20-8563ac46e52a">
             <bounds x="36" y="108" width="120" height="55"/>
           </child>
+          <documentation>19. The Hyperledger Indy-SDK Project distribution includes two key software components used to implement an Indy Wallet (25) and (32):&#xD;
+libIndy (lower-level)&#xD;
+libVCX (higher-level)</documentation>
         </child>
         <child xsi:type="archimate:Group" id="2bad7762-a167-4463-85e5-9aa4422168d8" name="Hyperledger Indy-Crypto Project">
           <bounds x="26" y="828" width="199" height="109"/>
@@ -959,6 +1080,7 @@ The following Actor Roles are depicted in this version of the ARM: Issuer, Holde
             <bounds x="36" y="108" width="120" height="55"/>
             <sourceConnection xsi:type="archimate:Connection" id="c69c2f9b-22ef-4b88-964a-8ae1f9801fe1" source="16d13327-5ea2-4c47-bbb7-372ef2432e92" target="2bebb2f6-3004-4afb-87be-c272b6f5595a" archimateRelationship="0f035658-d20f-45de-a348-b5ce3cc0ad26"/>
           </child>
+          <documentation>22. The Hyperledger Indy-Node Project distribution is used to implement the Indy Node functionality in the Ledger Node (35) and (37).</documentation>
         </child>
         <child xsi:type="archimate:Group" id="311bf486-fab0-41d1-bea1-0d09577003aa" name="Hyperledger Indy-Agent Project">
           <bounds x="26" y="672" width="199" height="109"/>
@@ -977,6 +1099,7 @@ The following Actor Roles are depicted in this version of the ARM: Issuer, Holde
             <sourceConnection xsi:type="archimate:Connection" id="c5cd8218-3856-4792-9dd0-b7974ff58962" source="6133a38a-cff6-49f8-93fa-728d8c05b6b5" target="1fede6fa-eb00-4a31-b0d3-95111116ba38" archimateRelationship="06fcc03f-e4b6-4a6c-8dc2-5794a32248ae"/>
           </child>
         </child>
+        <documentation>18. Technology Layer – Projects and Distributions highlights the Hyperledger (and potentially other) open source projects that design, build, and supply software components to both the Applications and Technology Layers.</documentation>
       </child>
       <child xsi:type="archimate:Group" id="9ac21ea4-ee83-4cbe-9ed1-4c56fadf5915" name="Business Layer - DID Document Data Model" font="1|Segoe UI|9.0|1|WINDOWS|1|-12|0|0|0|700|0|0|0|0|3|2|1|34|Segoe UI" fillColor="#ffffd5">
         <bounds x="1716" y="-72" width="445" height="397"/>
@@ -1107,6 +1230,7 @@ Reference: https://github.com/decentralized-identity/universal-resolver/blob/mas
             <bounds x="12" y="228" width="132" height="27"/>
           </child>
         </child>
+        <documentation>12. Application Layer – DID Document Data Model captures the key application-level model elements related to DID Documents such as id (DID) (13) and DID Entity (14).</documentation>
       </child>
       <child xsi:type="archimate:Group" id="0f706f6c-83c0-4496-9461-50dfb412f796" name="Technology Layer - DID Document Data Model" font="1|Segoe UI|9.0|1|WINDOWS|1|-12|0|0|0|700|0|0|0|0|3|2|1|34|Segoe UI" fillColor="#d5ffd5">
         <bounds x="1716" y="924" width="445" height="829"/>
@@ -1164,6 +1288,7 @@ Reference: https://github.com/decentralized-identity/universal-resolver/blob/mas
             <bounds x="24" y="108" width="205" height="25"/>
           </child>
         </child>
+        <documentation>15. Technology Layer – DID Document Data Model captures the key technology-level model elements such as a DID Document (16).</documentation>
       </child>
       <child xsi:type="archimate:Note" id="170b87cc-babb-4dda-a505-c2536c221ad1" font="1|Segoe UI|9.0|1|WINDOWS|1|-12|0|0|0|700|0|0|0|0|3|2|1|34|Segoe UI" textAlignment="1" fillColor="#e9e9e9" borderType="2">
         <bounds x="2208" y="-72" width="313" height="25"/>
@@ -1292,6 +1417,7 @@ Reference: https://github.com/decentralized-identity/universal-resolver/blob/mas
             <bounds x="12" y="60" width="181" height="25"/>
           </child>
         </child>
+        <documentation>49. Technology Layer – DID Document Data Model captures the key technology-level model elements such as the DID Ledger State (17) and Indy NYM Transaction (50).</documentation>
       </child>
       <child xsi:type="archimate:Group" id="c10c1987-a319-4f79-85d0-6b5f15a7c8d9" name="Application Layer - DID Data Model" font="1|Segoe UI|9.0|1|WINDOWS|1|-12|0|0|0|700|0|0|0|0|3|2|1|34|Segoe UI" fillColor="#d5eaff">
         <bounds x="1224" y="372" width="445" height="505"/>
@@ -1338,6 +1464,7 @@ Reference: https://github.com/decentralized-identity/universal-resolver/blob/mas
           <bounds x="252" y="120" width="145" height="37"/>
           <sourceConnection xsi:type="archimate:Connection" id="73ddc304-4e2f-4c76-8515-ee478c806e04" source="5fae77d6-a287-4df7-a78d-9c6a296dd667" target="aaa92580-4740-46b9-a5e8-f41c1456e54a" archimateRelationship="17662cd8-9aea-4c02-a05a-119d541d0e1f"/>
         </child>
+        <documentation>44. Application Layer – DID Data Model captures the key application-level model elements related to DIDs such as SEND_NYM Message (45).</documentation>
       </child>
     </element>
     <element xsi:type="archimate:ArchimateDiagramModel" name="Archive: Data Ingestion and Analytics" id="c956fa1a-1892-4c80-89eb-0ac1c093fb20">
@@ -3205,4 +3332,9 @@ https://uniresolver.io/#did=did:sov:HR6vs6GEZ8rHaVgjg2WodM</content>
       </child>
     </element>
   </folder>
+  <purpose>Hyperledger Indy/Sovrin/DID Comprehensive Architecture Reference Model (INDY ARM)&#xD;
+&#xD;
+Click on any of the views to the left - then click on any of the colored elements in any of the views.&#xD;
+&#xD;
+https://github.com/mwherman2000/indy-arm/blob/master/README.md#indy-arm---hyperledger-indysovrindid-comprehensive-architecture-reference-model-indy-arm</purpose>
 </archimate:model>

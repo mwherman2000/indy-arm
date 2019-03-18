@@ -7,6 +7,12 @@ _Draft document for discussion purposes_
 
 Update cycle: As required - sometimes several times in a single day.
 
+## Indy ARM Interactive Explorer
+
+Click here: [Indy ARM Interactive Explorer](https://mwherman2000.github.io/indy-arm/)
+
+[![Indy ARM Interactive Explorer](images/sovrin-arm-explorer.png)](https://mwherman2000.github.io/indy-arm/)
+
 ## Table of Contents
 
 - [indy-arm - Hyperledger Indy/Sovrin/DID Comprehensive Architecture Reference Model (INDY ARM)](#indy-arm---hyperledger-indysovrindid-comprehensive-architecture-reference-model-indy-arm)
