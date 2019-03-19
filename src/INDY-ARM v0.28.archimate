@@ -2386,7 +2386,7 @@ Perspective</content>
         </child>
       </child>
     </element>
-    <element xsi:type="archimate:ArchimateDiagramModel" name="*View: 2. DID Data Model and DID Document Data Model Viewpoint" id="414acd54-999b-44b6-bafb-c05f87367d9d">
+    <element xsi:type="archimate:ArchimateDiagramModel" name="*View: 2. DID and DID Doc Data Models Viewpoint" id="414acd54-999b-44b6-bafb-c05f87367d9d">
       <child xsi:type="archimate:Note" id="52212423-b3cc-4f3e-a048-8e8f55738960" font="1|Segoe UI|11.25|1|WINDOWS|1|-15|0|0|0|700|0|0|0|0|3|2|1|34|Segoe UI" textAlignment="1" borderType="2">
         <bounds x="1224" y="-192" width="1297" height="37"/>
         <content>HyperLedger Indy/Sovrin Architecture Reference Model v0.23 - Feb. 10, 2019 - Data Models Viewpoint - Draft for Discussion Purposes Only</content>
@@ -3336,5 +3336,7 @@ https://uniresolver.io/#did=did:sov:HR6vs6GEZ8rHaVgjg2WodM</content>
 &#xD;
 Click on any of the views to the left - then click on any of the colored elements in any of the views.&#xD;
 &#xD;
-https://github.com/mwherman2000/indy-arm/blob/master/README.md#indy-arm---hyperledger-indysovrindid-comprehensive-architecture-reference-model-indy-arm</purpose>
+https://github.com/mwherman2000/indy-arm/blob/master/README.md#indy-arm---hyperledger-indysovrindid-comprehensive-architecture-reference-model-indy-arm&#xD;
+&#xD;
+- Draft document for discussion purposes -</purpose>
 </archimate:model>
